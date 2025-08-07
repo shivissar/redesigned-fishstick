@@ -105,7 +105,8 @@ if page == "Learn (Flashcards)":
 
         st.markdown(f"### {row['tamil']}")
         if audio_on:
-            mp3 = helpers.tts_file(deck_name, int(row["id"]), row["tamil"])
+            with st.spinner("Generating audio..."):
+                mp3 = helpers.tts_file(deck_name, int(row["id"]), row["tamil"])
             if mp3.exists():
                 st.audio(str(mp3))
             elif not helpers.GTTS_AVAILABLE:

@@ -4,15 +4,19 @@ import datetime
 import pandas as pd
 from pathlib import Path
 
+# --- Constants ----------------------------------------------------------------
+# Get the absolute path of the directory containing this script, which is the project root
+PROJECT_ROOT = Path(__file__).parent.resolve()
+# Define paths relative to the project root
+DECKS_DIR = PROJECT_ROOT / "data" / "decks"
+PROGRESS_DIR = PROJECT_ROOT / ".progress"
+AUDIO_DIR = PROJECT_ROOT / ".audio"
+
 try:
     from gtts import gTTS
     GTTS_AVAILABLE = True
 except ImportError:
     GTTS_AVAILABLE = False
-
-DECKS_DIR = Path("data/decks")
-PROGRESS_DIR = Path(".progress")
-AUDIO_DIR = Path(".audio")
 
 def init_directories():
     """Create necessary directories if they don't exist."""
@@ -78,16 +82,38 @@ def update_card_progress(progress: dict, card_id: int, correct: bool):
         set_card_state(progress, card_id, 1, schedule_from_box(1))
 
 def due_cards(deck: pd.DataFrame, progress: dict) -> pd.DataFrame:
-    """Returns a DataFrame of cards that are due for review."""
-    due_ids, now = [], today()
-    for cid in deck["id"].tolist():
-        state = get_card_state(progress, cid)
-        try:
-            due_date = datetime.date.fromisoformat(state["due"])
-        except (ValueError, TypeError):
-            due_date = now
-        if due_date <= now:
-            due_ids.append(cid)
+    """
+    Returns a DataFrame of cards that are due for review.
+    This is optimized to use vectorized pandas operations.
+    """
+    if not progress:
+        # If no progress, all cards are considered new and thus due.
+        return deck.copy()
+
+    now = today()
+
+    # Create a DataFrame from the progress dictionary
+    progress_df = pd.DataFrame.from_dict(progress, orient='index')
+    if progress_df.empty:
+        return deck.copy()
+
+    progress_df.index = progress_df.index.astype(int)
+
+    # Convert 'due' column to date objects, coercing errors
+    progress_df['due'] = pd.to_datetime(progress_df['due'], errors='coerce').dt.date
+
+    # Get IDs of cards that are due from the progress data
+    # NaT dates (from coerce) will not satisfy the condition, which is correct
+    due_in_progress_ids = progress_df[progress_df['due'] <= now].index
+
+    # Get IDs of new cards (in the deck but not in progress)
+    deck_ids = set(deck['id'])
+    progress_ids = set(progress_df.index)
+    new_card_ids = list(deck_ids - progress_ids)
+
+    # Combine the two lists of due card IDs
+    due_ids = list(due_in_progress_ids) + new_card_ids
+
     return deck[deck["id"].isin(due_ids)].copy()
 
 def normalize(s: str) -> str:
