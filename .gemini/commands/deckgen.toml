@@ -1,0 +1,19 @@
+# Invoke as: /deckgen "<topic>"
+description = "Generate beginner Tamil phrases as JSON for a given topic."
+prompt = """
+You are assisting in building a beginner Tamil phrase deck for a flashcard app.
+
+TASK: Given a topic provided by the user, produce a JSON array of 20 phrase objects.
+
+FIELDS per object (strict):
+- id: integer (unique within this batch, start at 1)
+- category: short snake_case category (e.g., "basics", "shopping")
+- tamil: the phrase in Tamil script
+- translit: a simple Latin transliteration (ASCII; lowercase preferred)
+- english: concise English gloss
+
+STYLE/CONSTRAINTS:
+- CEFR A1-A2 difficulty; short, high-utility phrases.
+- Use respectful/formal forms when appropriate in Tamil.
+- Output only raw JSON, nothing else.
+"""

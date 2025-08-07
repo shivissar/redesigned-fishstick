@@ -1,0 +1,14 @@
+id,category,tamil,translit,english
+101,directions,இடது,idathu,Left
+102,directions,வலது,valathu,Right
+103,directions,நேராக,neraga,Straight
+104,directions,நிறுத்தவும்,niruththavum,Please stop
+105,transport,பஸ்,pas,Bus
+106,transport,ரயில்,rayil,Train
+107,transport,நிலையம்,nilaiyam,Station
+108,transport,டிக்கெட்,ticket,Ticket
+109,accom,ஹோட்டல் எங்கே?,hotel enge?,Where is the hotel?
+110,accom,ஒரு அறை வேண்டும்,oru arai vendum,I need a room
+111,accom,ஒரு இரவு,oru iravu,One night
+112,money,பண மாற்றம் எங்கே?,panamaatram enge?,Where can I exchange money?
+113,shopping,விலை குறைக்க முடியுமா?,vilai kuraikka mudiyumaa?,Can you reduce the price?

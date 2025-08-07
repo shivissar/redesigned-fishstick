@@ -1,0 +1,21 @@
+id,category,tamil,translit,english
+1,greetings,வணக்கம்,vanakkam,Hello
+2,greetings,நன்றி,nandri,Thank you
+3,greetings,மன்னிக்கவும்,mannikkavum,Sorry / Excuse me
+4,greetings,தயவுசெய்து,thayavu seithu,Please
+5,greetings,என் பெயர் ___,en peyar ___,My name is ___
+6,greetings,உங்களை சந்தித்ததில் மகிழ்ச்சி,ungalai sandhithathil magilchi,Nice to meet you
+7,polite,ஆமாம்,aamam,Yes
+8,polite,இல்லை,illai,No
+9,polite,சரி,sari,Okay / Correct
+10,basics,எப்படி இருக்கிறீர்கள்?,eppadi irukkireergal?,How are you? (formal)
+11,basics,நான் நன்றாக இருக்கிறேன்,naan nandraga irukkiren,I am fine
+12,time,இன்று,indru,Today
+13,time,நாளை,naalai,Tomorrow
+14,time,நேற்று,netru,Yesterday
+15,questions,எங்கே?,enge?,Where?
+16,questions,என்ன?,enna?,What?
+17,travel,கழிப்பறை எங்கே?,kazhipparai enge?,Where is the bathroom?
+18,travel,எவ்வளவு?,evvalavu?,How much?
+19,travel,எனக்கு புரியவில்லை,enakku puriyavillai,I don’t understand
+20,travel,ஆங்கிலம் பேசுவீங்களா?,aangilam pesuvingalaa?,Do you speak English?
