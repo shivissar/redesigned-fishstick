@@ -72,11 +72,14 @@ def set_card_state(progress: dict, card_id: int, box: int, due: datetime.date):
     """Updates the state of a card in the progress data."""
     progress[str(card_id)] = {"box": int(box), "due": str(due)}
 
-def update_card_progress(progress: dict, card_id: int, correct: bool):
+def update_card_progress(progress: dict, card_id: int, correct: bool, hard_mode: bool = False):
     """Updates the card's box and due date based on whether the answer was correct."""
     state = get_card_state(progress, card_id)
     if correct:
         new_box = min(state["box"] + 1, 5)
+        set_card_state(progress, card_id, new_box, schedule_from_box(new_box))
+    elif hard_mode:
+        new_box = max(1, state["box"] - 1) # Move back one box, but not below 1
         set_card_state(progress, card_id, new_box, schedule_from_box(new_box))
     else:
         set_card_state(progress, card_id, 1, schedule_from_box(1))

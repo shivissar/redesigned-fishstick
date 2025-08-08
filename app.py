@@ -145,7 +145,7 @@ if page == "Learn (Flashcards)":
 
             st.markdown("--- ") # Separator for buttons
 
-            c1, c2, c3 = st.columns(3)
+            c1, c2, c3, c4 = st.columns(4)
             if c1.button("I knew it ✅"):
                 helpers.update_card_progress(progress, int(row["id"]), correct=True)
                 helpers.save_progress(learner, deck_name, progress)
@@ -155,7 +155,12 @@ if page == "Learn (Flashcards)":
                 # Treat as neither correct nor incorrect, just show next card
                 st.session_state[SessionState.CARD_INDEX] += 1
                 st.rerun()
-            if c3.button("I missed it ❌"):
+            if c3.button("Hard 😩"):
+                helpers.update_card_progress(progress, int(row["id"]), correct=False, hard_mode=True)
+                helpers.save_progress(learner, deck_name, progress)
+                st.session_state[SessionState.CARD_INDEX] += 1
+                st.rerun()
+            if c4.button("I missed it ❌"):
                 helpers.update_card_progress(progress, int(row["id"]), correct=False)
                 helpers.save_progress(learner, deck_name, progress)
                 st.session_state[SessionState.CARD_INDEX] += 1
@@ -179,30 +184,35 @@ elif page == "Quiz":
     else:
         with st.container(border=True):
             qrow = pool.sample(1, random_state=random.randint(0, 9999)).iloc[0]
-            prompt_side = "tamil_to_english" if direction == "Tamil → English" else "english_to_tamil"
-            
-            if prompt_side == "tamil_to_english":
-                correct_answer = qrow["english"]
-                distractors = pool[pool["id"] != qrow["id"]]["english"].sample(min(3, len(pool)-1)).tolist()
-            else:
-                correct_answer = qrow["tamil"]
-                distractors = pool[pool["id"] != qrow["id"]]["tamil"].sample(min(3, len(pool)-1)).tolist()
+            # Question display: Always show both Tamil and English
+            st.subheader(f"{qrow['tamil']} ({qrow['english']})")
 
-            options = distractors + [correct_answer]
+            # Generate options with both Tamil and English
+            # Correct answer
+            correct_option_text = f"{qrow['tamil']} ({qrow['english']})"
+
+            # Distractors
+            distractor_options_texts = []
+            # Get other cards that are not the current question card
+            other_cards = pool[pool["id"] != qrow["id"]]
+
+            # Sample distractors and format them
+            num_distractors = min(3, len(other_cards))
+            if num_distractors > 0:
+                sampled_distractors = other_cards.sample(num_distractors, random_state=random.randint(0, 9999))
+                for _, d_row in sampled_distractors.iterrows():
+                    distractor_options_texts.append(f"{d_row['tamil']} ({d_row['english']})")
+
+            options = distractor_options_texts + [correct_option_text]
             random.shuffle(options)
-
-            if prompt_side == "tamil_to_english":
-                st.subheader(qrow["tamil"])
-            else:
-                st.subheader(qrow["english"])
 
             choice = st.radio("Pick one:", options, index=None)
             if st.button("Check"):
-                is_correct = (choice == correct_answer)
+                is_correct = (choice == correct_option_text) # Compare against the formatted correct option
                 if is_correct:
                     st.success("Correct!")
                 else:
-                    st.error(f"Not quite. Correct answer: {correct_answer}")
+                    st.error(f"Not quite. Correct answer: {correct_option_text}")
                 helpers.update_card_progress(progress, int(qrow["id"]), is_correct)
                 helpers.save_progress(learner, deck_name, progress)
 
