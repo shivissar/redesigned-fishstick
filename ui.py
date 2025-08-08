@@ -69,10 +69,11 @@ def render_alphabet_page(helpers):
         with col2:
             st.write(f"*{TAMIL_TRANSLITERATIONS.get(char, '')}*")
         with col3:
-            with st.spinner("Generating audio for Tamil character..."):
-                audio_file = helpers.tts_for_alphabet(char)
-                if audio_file.exists():
-                    st.audio(str(audio_file))
+            if st.button("▶️", key=f"play_vowel_{char}"):
+                with st.spinner("Generating audio for Tamil character..."):
+                    audio_file = helpers.tts_for_alphabet(char)
+                    if audio_file.exists():
+                        st.audio(str(audio_file))
 
     st.subheader("Consonants (மெய்யெழுத்துக்கள்)")
     all_consonants = CONSONANTS_ROW1 + CONSONANTS_ROW2
@@ -83,7 +84,8 @@ def render_alphabet_page(helpers):
         with col2:
             st.write(f"*{TAMIL_TRANSLITERATIONS.get(char, '')}*")
         with col3:
-            with st.spinner("Generating audio for Tamil character..."):
-                audio_file = helpers.tts_for_alphabet(char)
-                if audio_file.exists():
-                    st.audio(str(audio_file))
+            if st.button("▶️", key=f"play_consonant_{char}"):
+                with st.spinner("Generating audio for Tamil character..."):
+                    audio_file = helpers.tts_for_alphabet(char)
+                    if audio_file.exists():
+                        st.audio(str(audio_file))

@@ -89,8 +89,8 @@ if deck_name != st.session_state[SessionState.DECK_NAME]:
 
 page = st.sidebar.radio(
     "Go to",
-    ["Home", "Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"],
-    index=["Home", "Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"].index(st.session_state[SessionState.PAGE])
+    ["Home", "Learn (Flashcards)", "Quiz", "Fill-in-the-Blanks", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"],
+    index=["Home", "Learn (Flashcards)", "Quiz", "Fill-in-the-Blanks", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"].index(st.session_state[SessionState.PAGE])
 )
 if page != st.session_state[SessionState.PAGE]:
     st.session_state[SessionState.PAGE] = page
@@ -264,10 +264,20 @@ elif page == "Quiz":
                 options = [correct_answer] + [f"{row['tamil']} ({row['translit']})" for _, row in other_choices.iterrows()]
 
             st.markdown(f"<h3 style='font-size: 30px;'>{question}</h3>", unsafe_allow_html=True)
+            with st.spinner("Generating Tamil audio..."):
+                mp3 = helpers.tts_file(deck_name, int(qrow["id"]), qrow["tamil"])
+            if mp3.exists():
+                st.audio(str(mp3))
+            elif not helpers.GTTS_AVAILABLE:
+                st.caption("Install gTTS for audio: `pip install gTTS` (requires internet).")
             random.shuffle(options)
 
-            choice = st.radio("Pick one:", options, index=None)
-            if st.button("Check"):
+            choice = st.radio("Pick one:", options, index=None, key="quiz_choice")
+            
+            col_check, col_next = st.columns(2)
+
+            if col_check.button("Check", disabled=st.session_state.get("quiz_checked", False)):
+                st.session_state["quiz_checked"] = True
                 is_correct = (choice == correct_answer)
                 st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
                     progress, int(qrow["id"]), is_correct, 
@@ -280,8 +290,74 @@ elif page == "Quiz":
                 else:
                     st.error(f"Not quite. Correct answer: {correct_answer}")
                 helpers.save_progress(learner, deck_name, progress)
+                st.session_state["current_qrow"] = qrow # Store qrow for next button
+                st.session_state["correct_answer"] = correct_answer # Store correct_answer for next button
+                # st.rerun() # Removed rerun here
 
-elif page == "Type (Translit)":
+            if st.session_state.get("quiz_checked", False):
+                if col_next.button("Next Question"):
+                    st.session_state["quiz_checked"] = False
+                    st.session_state[SessionState.CARD_INDEX] += 1 # Advance card index for next question
+                    st.rerun()
+
+elif page == "Fill-in-the-Blanks":
+    deck = helpers.load_deck(deck_name)
+    progress = helpers.load_progress(learner, deck_name)
+    st.header(f"Fill-in-the-Blanks ({deck_name})")
+
+    colA, colB = st.columns(2)
+    with colA:
+        categories = ["All"] + sorted(deck["category"].unique().tolist())
+        cat = st.selectbox("Category", categories, index=0)
+    with colB:
+        st.empty() # Placeholder for future options
+
+    pool = deck.copy() if cat == "All" else deck[deck["category"] == cat].copy()
+
+    if pool.empty:
+        st.info("No cards in this category.")
+    else:
+        with st.container(border=True):
+            qrow = pool.sample(1, random_state=random.randint(0, 9999)).iloc[0]
+            english_sentence = qrow["english"]
+            words = english_sentence.split()
+            
+            if len(words) > 1:
+                # Randomly select a word to mask
+                masked_word_index = random.randint(0, len(words) - 1)
+                masked_word = words[masked_word_index]
+                
+                # Create the question sentence with a blank
+                question_words = words[:masked_word_index] + ["_____"] + words[masked_word_index+1:]
+                question_sentence = " ".join(question_words)
+                
+                st.markdown(f"<h3 style='font-size: 30px;'>{question_sentence}</h3>", unsafe_allow_html=True)
+                user_answer = st.text_input("Your answer:", key="fill_in_blank_answer")
+
+                col_check, col_next = st.columns(2)
+
+                if col_check.button("Check", disabled=st.session_state.get("fill_in_blank_checked", False)):
+                    st.session_state["fill_in_blank_checked"] = True
+                    is_correct = (helpers.normalize(user_answer) == helpers.normalize(masked_word))
+                    st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
+                        progress, int(qrow["id"]), is_correct, 
+                        current_score=st.session_state[SessionState.SCORE], 
+                        current_streak=st.session_state[SessionState.STREAK]
+                    )
+                    st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
+                    if is_correct:
+                        st.success("Correct!")
+                    else:
+                        st.error(f"Not quite. Correct answer: {masked_word}")
+                    helpers.save_progress(learner, deck_name, progress)
+
+                if st.session_state.get("fill_in_blank_checked", False):
+                    if col_next.button("Next Question"):
+                        st.session_state["fill_in_blank_checked"] = False
+                        st.session_state[SessionState.CARD_INDEX] += 1 # Advance card index for next question
+                        st.rerun()
+            else:
+                st.info("This card does not have enough words for a fill-in-the-blanks question.")
     deck = helpers.load_deck(deck_name)
     progress = helpers.load_progress(learner, deck_name)
     st.header(f"Type — Transliteration ({deck_name})")
