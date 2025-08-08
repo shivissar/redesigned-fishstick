@@ -1,14 +1,14 @@
-id,category,tamil,translit,english
-101,directions,இடது,idathu,Left
-102,directions,வலது,valathu,Right
-103,directions,நேராக,neraga,Straight
-104,directions,நிறுத்தவும்,niruththavum,Please stop
-105,transport,பஸ்,pas,Bus
-106,transport,ரயில்,rayil,Train
-107,transport,நிலையம்,nilaiyam,Station
-108,transport,டிக்கெட்,ticket,Ticket
-109,accom,ஹோட்டல் எங்கே?,hotel enge?,Where is the hotel?
-110,accom,ஒரு அறை வேண்டும்,oru arai vendum,I need a room
-111,accom,ஒரு இரவு,oru iravu,One night
-112,money,பண மாற்றம் எங்கே?,panamaatram enge?,Where can I exchange money?
-113,shopping,விலை குறைக்க முடியுமா?,vilai kuraikka mudiyumaa?,Can you reduce the price?
+id,category,tamil,translit,english,image
+101,directions,இடது,idathu,Left,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdROa1nHQVlKnIFM6SMng8NY2YPRtwWTqoPinzBqNiZ5SqNacIVpiFOnLyMDs&s
+102,directions,வலது,valathu,Right,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4w23OeciIpiv1YANarxvefAINl4Lw7arEVzZSceSLJ8OZvgmDlXvd-zE8GMM&s
+103,directions,நேராக,neraga,Straight,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH9JuGtAeAJ1YA9QzdGy-EEzSGJAWNmZg8ss05il1351CVGQOMpEF8Hr4a6Ik&s
+104,directions,நிறுத்தவும்,niruththavum,Please stop,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGG8b4nabygZ6fXWa28g3dIuzFmcAE3x8C4b6_1uoemPghNvIjb32j-4WIQg&s
+105,transport,பஸ்,pas,Bus,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFxXVCWSDAovib9naoWR3w8ph8PUHRZ9uhAI7xS1eJkoKpbLBda3X2wcbXUA&s
+106,transport,ரயில்,rayil,Train,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQh_HTrTkTEaxm2OsLx0dO4HvMTPz4gZ81C9QEu5NV0nRiUUN3QqGdKwyhhQ&s
+107,transport,நிலையம்,nilaiyam,Station,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR12obEFYxj_IKPcwXI3fsmeU5yCaOS7cqDj5Hih6L-quURbUrUY4sxx5mv09U&s
+108,transport,டிக்கெட்,ticket,Ticket,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPnvrTHhjk4aBNb94JEtVRU9E75qShnwg9pxwiZV6UtEvSq8dcUjatdj8fQ&s
+109,accom,ஹோட்டல் எங்கே?,hotel enge?,Where is the hotel?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_c5Ju1zWk5Eg1GBpc79twNEJuNRCPyCG3aCVi1w1VKX4SOenBXzXNc2I5w&s
+110,accom,ஒரு அறை வேண்டும்,oru arai vendum,I need a room,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS725X6KlhQ2Xpd71KLXIbAH_O8JNqdd3GA_0MQp3zaIh_FjJXT08tWN8uUDUQ&s
+111,accom,ஒரு இரவு,oru iravu,One night,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCT3jRPtDaaVVLCwmETqvnqF4zad1WmTlIdh8PqfLvHwpYmMQfPA23oLBMLA&s
+112,money,பண மாற்றம் எங்கே?,panamaatram enge?,Where can I exchange money?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHf3U2Av_3du8Ny3k95Xmibe_wsrTzyOv34MiuSyl7koVOAsF--Yin0yf1uU&s
+113,shopping,விலை குறைக்க முடியுமா?,vilai kuraikka mudiyumaa?,Can you reduce the price?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE11TUcrpSxYkMmkvmAfbO3ZpC_pXLQS3GKtU7Rscw6VuOfrxlCzUQ5l5zSHg&s

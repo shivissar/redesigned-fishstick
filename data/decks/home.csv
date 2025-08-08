@@ -1,6 +1,6 @@
-id,category,tamil,translit,english
-1,home,வீடு,vīṭu,house
-2,home,குடும்பம்,kuṭumpam,family
-3,home,சமையலறை,camaiyalaṟai,kitchen
-4,home,படுக்கையறை,paṭukkaiyaṟai,bedroom
-5,home,வாழ்க்கை,vāḻkkai,life
+id,category,tamil,translit,english,image
+1,home,வீடு,vīṭu,house,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjC7smn032-n9D6a-2sHBUUzivcIykxAsVNwJIctKbFWWfbPHkLrXy9bHYqw&s
+2,home,குடும்பம்,kuṭumpam,family,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU8yPcfgtMfZMueBin3-Qa63D21gafPs1ryk9uAV5BRSnr6meoKk0KF_5xRA&s
+3,home,சமையலறை,camaiyalaṟai,kitchen,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSM-rgbWVHzWIIgJg2YCE0FEpfwKb6iWzTRNdgKYVhr0l8059I7tMs3AJtDg&s
+4,home,படுக்கையறை,paṭukkaiyaṟai,bedroom,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsyFiNAsewcMyHDWzpbtbm1l33mZtqBGy_RCrw0J_uKi0TZ_eDnc24zN8F0ic&s
+5,home,வாழ்க்கை,vāḻkkai,life,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOyIe7jHvYSijKxUa1WDaUR8HCnlTDtUL-eIUCX0znNoAQYqeozWD7toq3dkY&s

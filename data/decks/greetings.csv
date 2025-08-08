@@ -1,19 +1,19 @@
-id,category,tamil,translit,english
-1,greetings,வணக்கம்,Vanakkam,Hello. / Hi.
-2,greetings,நன்றி,Nanri,Thank you.
-3,greetings,மிக்க நன்றி,Mikka nanri,Thank you very much.
-4,greetings,நீங்கள் வரேவற்கப்படுகிறீர்கள்,Ninkal varaverkappatukirirkal,You are welcome.
-5,greetings,ஆம். / இல்ைல,Am. / Illai,Yes. / No.
-6,greetings,எங்ேக (ஒரு / பல்ெபாருள் அங்காடி)?,Enke (oru/ palporul ankati)?,Where is (a/the supermarket)?
-7,greetings,நான் எங்கு வாங்கலாம் … ?,Nan enku vankalam … ?,Where can I buy … ?
-8,greetings,நான் வாங்க விரும்புகிேறன் …,Nan vanka virumpukiren …,I would like to buy …
-9,greetings,இது எவ்வளவு?,Itu evvalavu?,How much is it?
-10,greetings,விைலைய எழுத முடியுமா?,Vilaiyai eluta mutiyuma?,Can you write down the price?
-11,greetings,கிெரடிட்/ெடபிட் கார்டுகைள ஏற்கிறீர்களா?,Kiretit/tepit kartukalai erkirirkala?,Do you accept credit/debit cards?
-12,greetings,தயவுெசய்து நான் ஒரு ைபைய ைவத்திருக்க முடியுமா?,Tayavuceytu nan oru paiyai vaittirukka mutiyuma?,"Could I have a bag, please?"
-13,greetings,"எனக்கு ஒரு ைப ேதைவயில்ைல, நன்றி","Enakku oru pai tevaiyillai, nanri","I don't need a bag, thanks."
-14,greetings,தயவுெசய்து என்னிடம் ரசீது கிைடக்குமா?,Tayavuceytu ennitam racitu kitaikkuma?,"Could I have a receipt, please?"
-15,greetings,தயவுெசய்து இைதத் திருப்பித் தர விரும்புகிேறன்,Tayavuceytu itait tiruppit tara virumpukiren,"I would like to return this, please."
-16,greetings,தயவுெசய்து எனது பணத்ைதத் திரும்பப் ெபற விரும்புகிேறன்,Tayavuceytu enatu panattait tirumpap pera virumpukiren,"I would like my money back, please."
-17,greetings,விைலையக் குைறக்க முடியுமா?,Vilaiyaik kuraikka mutiyuma?,Can you lower the price?
-18,greetings,நான் உங்களுக்கு …,Nan unkalukku …,I will give you …
+id,category,tamil,translit,english,image
+1,greetings,வணக்கம்,Vanakkam,Hello. / Hi.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmXyOUdqXhDLE30fzHlDUd0JjvM45u0fhDqEIIcbe-5gKibzEhCTzsoYwpw&s
+2,greetings,நன்றி,Nanri,Thank you.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbOpRVfQZAqgmUMESlYvXRJW0em4NIxfdnI8O58B7UAOPqa6P2kBD9HpvMqfk&s
+3,greetings,மிக்க நன்றி,Mikka nanri,Thank you very much.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwHrCg7s4XzGSKs8KnV7ZmzITOQ8sMZTRxI8Ke6rm6i3_oU76jcIjMh65GWg&s
+4,greetings,நீங்கள் வரேவற்கப்படுகிறீர்கள்,Ninkal varaverkappatukirirkal,You are welcome.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY36w6w9pNimr0qI_ibvHYlr7nzY1tdIQmvpPt09Zf2x9DrzqaqVpf0FshlQ&s
+5,greetings,ஆம். / இல்ைல,Am. / Illai,Yes. / No.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjc2o9PQw6cLw8JWIgXxWFUPPJCRk1g3L0AFuF_v_Lkfb5BYOiJrnr2_tp354&s
+6,greetings,எங்ேக (ஒரு / பல்ெபாருள் அங்காடி)?,Enke (oru/ palporul ankati)?,Where is (a/the supermarket)?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY6X4CL97CBgqthGAuVHt2ocztKCnyLBosM4Nn8OY4F5rZrYZHcCEtGNp1p38&s
+7,greetings,நான் எங்கு வாங்கலாம் … ?,Nan enku vankalam … ?,Where can I buy … ?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmT5OdqOjy4UTdIt5yv3WmFddftH8x2OT2iU5FtK9YRv78Dj60ZSaoEmCgmg&s
+8,greetings,நான் வாங்க விரும்புகிேறன் …,Nan vanka virumpukiren …,I would like to buy …,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBuAkkgL8feRoUlkc0iLSK1W2mrXgd8K6HpxkC8dyqsVdyRCvylxTClF5Iw&s
+9,greetings,இது எவ்வளவு?,Itu evvalavu?,How much is it?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPN2oqEEr_3Sue9kKvks_ucARuU0PYco8Tg-At8WL3lEX8oLEGX1bfcUg66xI&s
+10,greetings,விைலைய எழுத முடியுமா?,Vilaiyai eluta mutiyuma?,Can you write down the price?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5rJmpB7JhErws7D74rmrljPjaYcvJx-p7P1fMh-hYXrREZt0V3AgHhbCY3Fg&s
+11,greetings,கிெரடிட்/ெடபிட் கார்டுகைள ஏற்கிறீர்களா?,Kiretit/tepit kartukalai erkirirkala?,Do you accept credit/debit cards?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeBjkQcOrOcvO_egWsBo_ORDGi530UUf0rmkz5QVYGmsbsygPUZSszX7pIYEk&s
+12,greetings,தயவுெசய்து நான் ஒரு ைபைய ைவத்திருக்க முடியுமா?,Tayavuceytu nan oru paiyai vaittirukka mutiyuma?,"Could I have a bag, please?",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSBT2R2at9NNyMAMKCpgam4Z_ajVEdrO1rlqWPwYBRuLQhN_7Y4jLi4Kn6vQ&s
+13,greetings,"எனக்கு ஒரு ைப ேதைவயில்ைல, நன்றி","Enakku oru pai tevaiyillai, nanri","I don't need a bag, thanks.",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjWXLG73iZk4wifA9GayyYc24PY5DSTT9rODTpOITz-iU2md9qJtbtHCK0Xw&s
+14,greetings,தயவுெசய்து என்னிடம் ரசீது கிைடக்குமா?,Tayavuceytu ennitam racitu kitaikkuma?,"Could I have a receipt, please?",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSasFYYovlg4G4mOVY2l1JLT_H33RmVaU4ZDkI4ujhBQRRohusrQYe-g-yMBA&s
+15,greetings,தயவுெசய்து இைதத் திருப்பித் தர விரும்புகிேறன்,Tayavuceytu itait tiruppit tara virumpukiren,"I would like to return this, please.",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3hmbyOpT3OOAoy4RfQakpLFDXBSRSp4wzTOvbeEqB3xwE3XRn02pCvgfO_M&s
+16,greetings,தயவுெசய்து எனது பணத்ைதத் திரும்பப் ெபற விரும்புகிேறன்,Tayavuceytu enatu panattait tirumpap pera virumpukiren,"I would like my money back, please.",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBBp6yAiqFfGCQRpP0GMzBIH90hMDJb9GmrPS3qlJPh2aRZdCJd31qneWu_g&s
+17,greetings,விைலையக் குைறக்க முடியுமா?,Vilaiyaik kuraikka mutiyuma?,Can you lower the price?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE11TUcrpSxYkMmkvmAfbO3ZpC_pXLQS3GKtU7Rscw6VuOfrxlCzUQ5l5zSHg&s
+18,greetings,நான் உங்களுக்கு …,Nan unkalukku …,I will give you …,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhDy2DyaWrLu5GyliLMnITQxB8hjDFaBmtB_6QYI2u2rSS6PZ-ZT60tsSp50&s

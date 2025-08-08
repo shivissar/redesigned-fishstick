@@ -178,6 +178,9 @@ if page == "Learn (Flashcards)":
         with st.container(border=True):
             st.write(f"**Card {int(row['id'])}** · Box **{state['box']}** · Due **{state['due']}**")
 
+            if "image" in row and pd.notna(row["image"]):
+                st.image(row["image"])
+
             st.markdown(f"<h3 style='font-size: 40px;'>{row['tamil']}</h3>", unsafe_allow_html=True)
             if audio_on:
                 with st.spinner("Generating Tamil audio for this card..."):

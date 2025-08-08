@@ -1,17 +1,17 @@
-id,category,tamil,translit,english
-1,accommodation,ஒரு ேஹாட்டல் எங்ேக?,Oru hottal enke?,Where is a hotel?
-2,accommodation,ஒரு இரவுக்கு எவ்வளவு?,Oru iravukku evvalavu?,How much is it per night?
-3,accommodation,காைல உணவு ேசர்க்கப்பட்டுள்ளதா?,Kalai unavu cerkkappattullata?,Is breakfast included?
-4,accommodation,என்னிடம் 2 இரவுகள் / வாரங்களுக்கு முன்பதிவு உள்ளது,Ennitam 2 iravukal/ varankalukku munpativu ullatu,I have a reservation for 2 nights / weeks.
-5,accommodation,இங்கு வயர்ெலஸ் இைணய வசதி உள்ளதா?,Inku vayarles inaiya vacati ullata?,Is there wireless internet access here?
-6,accommodation,உங்களிடம் இரட்ைட / ஒற்ைற / குடும்ப அைற உள்ளதா?,Unkalitam irattai/ orrai/ kutumpa arai ullata?,Do you have a double / single / family room?
-7,accommodation,நான் அைறையப் பார்க்கலாமா?,Nan araiyaip parkkalama?,Can I see the room?
-8,accommodation,காைல உணவு எப்ேபாது/எங்ேக வழங்கப்படுகிறது?,Kalai unavu eppotu/enke valankappatukiratu?,When/Where is breakfast served?
-9,accommodation,நீங்கள் இங்ேக சுற்றுப்பயணங்கைள ஏற்பாடு ெசய்கிறீர்களா?,Ninkal inke curruppayanankalai erpatu ceykirirkala?,Do you arrange tours here?
-10,accommodation,தயவு ெசய்து எனது சாவிைய நான் ெபற முடியுமா?,Tayavu ceytu enatu caviyai nan pera mutiyuma?,"Could I have my key, please?"
-11,accommodation,"மன்னிக்கவும், என் சாவிைய இழந்துவிட்ேடன்!","Mannikkavum, en caviyai ilantuvitten!","Sorry, I lost my key!"
-12,accommodation,ெவந்நீர் இல்ைல,Vennir illai,There is no hot water.
-13,accommodation,ஏர் கண்டிஷனர் / ஹீட்டர் / ஃேபன் ேவைல ெசய்யாது,Er kantisanar/ hittar/ hpen velai ceyyatu,The air conditioner / heater / fan does not work.
-14,accommodation,ெசக் அவுட் எத்தைன மணிக்கு?,Cek avut ettanai manikku?,What time is checkout?
-15,accommodation,தயவுெசய்து எனது ைவப்புத்ெதாைகைய நான் ைவத்திருக்க முடியுமா?,Tayavuceytu enatu vaipputtokaiyai nan vaittirukka mutiyuma?,"Could I have my deposit, please?"
-16,accommodation,எனக்காக ஒரு டாக்ஸிைய அைழக்க முடியுமா?,Enakkaka oru taksiyai alaikka mutiyuma?,Can you call a taxi for me?
+id,category,tamil,translit,english,image
+1,accommodation,ஒரு ேஹாட்டல் எங்ேக?,Oru hottal enke?,Where is a hotel?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDIMAtoQeuTcja_4gLbbqMDNHd4p65fOCP2TFGIONkGWWw1lynTv3SjyBnQ&s
+2,accommodation,ஒரு இரவுக்கு எவ்வளவு?,Oru iravukku evvalavu?,How much is it per night?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2N3V5TCdPUEYBwhtmKrmgYCRz7eNGNm8-Zt6-FlD4hwJD4niUxSVN9DW_vU&s
+3,accommodation,காைல உணவு ேசர்க்கப்பட்டுள்ளதா?,Kalai unavu cerkkappattullata?,Is breakfast included?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDJW8uCufq_lw8g64iYkWnirHt44th4JDfyWZ_W222_wGQcoDl9-h04IHK1E&s
+4,accommodation,என்னிடம் 2 இரவுகள் / வாரங்களுக்கு முன்பதிவு உள்ளது,Ennitam 2 iravukal/ varankalukku munpativu ullatu,I have a reservation for 2 nights / weeks.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDEgf1mxjEU13Laey3wvx7SoAqxI1kXEpfaxrAklue7A5TMrClHcFREifLmw&s
+5,accommodation,இங்கு வயர்ெலஸ் இைணய வசதி உள்ளதா?,Inku vayarles inaiya vacati ullata?,Is there wireless internet access here?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Y4gx_i4x14UakqpGjVxt6e1yR_CSAn67AO_HQsnqeWxtS97yaVsBXGjPdQ&s
+6,accommodation,உங்களிடம் இரட்ைட / ஒற்ைற / குடும்ப அைற உள்ளதா?,Unkalitam irattai/ orrai/ kutumpa arai ullata?,Do you have a double / single / family room?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_uHrH7mykyQc7iVBuco1FEWEy9h6qe4X37RdZE0a2qVIghPSmYw52jjvNvw&s
+7,accommodation,நான் அைறையப் பார்க்கலாமா?,Nan araiyaip parkkalama?,Can I see the room?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzO8VEXMg61lDqcp-sgg-ntuDuolNypAvmJxiivIsNT2zmrm6e_I3iy6IPuM&s
+8,accommodation,காைல உணவு எப்ேபாது/எங்ேக வழங்கப்படுகிறது?,Kalai unavu eppotu/enke valankappatukiratu?,When/Where is breakfast served?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-C4UXi4_GuQhwzn2TnCsJ8TXbYMk6_T3CbGbU4N19W6onNXZYrUW9i5jYSq4&s
+9,accommodation,நீங்கள் இங்ேக சுற்றுப்பயணங்கைள ஏற்பாடு ெசய்கிறீர்களா?,Ninkal inke curruppayanankalai erpatu ceykirirkala?,Do you arrange tours here?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTylKdgKSVRtCEY_EusWNX3Hg2YiMfE1cQOgGhNTFH8do4VA-5K3SesytFL0go&s
+10,accommodation,தயவு ெசய்து எனது சாவிைய நான் ெபற முடியுமா?,Tayavu ceytu enatu caviyai nan pera mutiyuma?,"Could I have my key, please?",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkTv3u4xhFAEEEOTsofi_WtYUDuMhlkOfw9wGjPj0Lml-DF5nOXM2W639gfmA&s
+11,accommodation,"மன்னிக்கவும், என் சாவிைய இழந்துவிட்ேடன்!","Mannikkavum, en caviyai ilantuvitten!","Sorry, I lost my key!",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtynOgzEKtJi4fcVuGBTO1etgSnMz2eKGtk-Ik6pNLP-ioFm8YGCUHG-QrxgU&s
+12,accommodation,ெவந்நீர் இல்ைல,Vennir illai,There is no hot water.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_VhQysWI874tZlnlmsT1Apl_RyqLmFlxD2LwajFje9Jzy19XFpEttT33s8Y&s
+13,accommodation,ஏர் கண்டிஷனர் / ஹீட்டர் / ஃேபன் ேவைல ெசய்யாது,Er kantisanar/ hittar/ hpen velai ceyyatu,The air conditioner / heater / fan does not work.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ6BaOf2HlZ_FRC8GDW7DYqK1I7BYrqsR94yjN_j9DN7xrdjMvxnyN08D4-Y&s
+14,accommodation,ெசக் அவுட் எத்தைன மணிக்கு?,Cek avut ettanai manikku?,What time is checkout?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh0uyCmqinxtqwpmYogPXXd0xdixIAW_Um-EhjPUruk1yFY_cYm2YqGZ9Jfw&s
+15,accommodation,தயவுெசய்து எனது ைவப்புத்ெதாைகைய நான் ைவத்திருக்க முடியுமா?,Tayavuceytu enatu vaipputtokaiyai nan vaittirukka mutiyuma?,"Could I have my deposit, please?",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCv1lkEC4ujWOyo1zXVsgHbFE6HeVrp-g7qZuZmi5GM4OWtD3EPK7XBtaRgQ&s
+16,accommodation,எனக்காக ஒரு டாக்ஸிைய அைழக்க முடியுமா?,Enakkaka oru taksiyai alaikka mutiyuma?,Can you call a taxi for me?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOqp3-MxdUrMayzOtl21eMu5xJlhigyW_ZUxGpG2PBOAcW307u2qM3CV56ZQ&s

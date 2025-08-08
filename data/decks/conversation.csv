@@ -1,37 +1,37 @@
-id,category,tamil,translit,english
-1,conversation,மன்னிக்கவும். / மன்னிக்கவும்,Mannikkavum. / Mannikkavum,Excuse me. / Sorry.
-2,conversation,கவைலப்படாேத,Kavalaippatate,Don`t worry.
-3,conversation,காைல வணக்கம்,Kalai vanakkam,Good morning.
-4,conversation,மதிய வணக்கம்,Matiya vanakkam,Good afternoon.
-5,conversation,மாைல வணக்கம்,Malai vanakkam,Good evening.
-6,conversation,இனிய இரவு,Iniya iravu,Good night.
-7,conversation,பிரியாவிைட,Piriyavitai,Goodbye.
-8,conversation,வருகிேறன்,Varukiren,Bye.
-9,conversation,எப்படி இருக்கிறீர்கள்?,Eppati irukkirirkal?,How are you?
-10,conversation,நான் நலமாக இருக்கிேறன். மற்றும் நீங்கள்?,Nan nalamaka irukkiren. Marrum ninkal?,I am fine. And you?
-11,conversation,உங்கள் ெபயர் என்ன?,Unkal peyar enna?,What is your name?
-12,conversation,உங்கைள சந்திப்பதில் மகிழ்ச்சி அைடகிேறன்,Unkalai cantippatil makilcci ataikiren,I am pleased to meet you.
-13,conversation,ஆசீர்வதிக்கிேறன்! (தும்மும்ேபாது),Acirvatikkiren! [tum'mumpotu],Bless you! (when sneezing)
-14,conversation,வாழ்த்து,vaazhthu,Cheers!
-15,conversation,நல்ல அதிர்ஷ்டம்!,Nalla atirstam!,Good Luck!
-16,conversation,பிறந்தநாள் வாழ்த்துக்கள்!,Pirantanal valttukkal!,Happy Birthday!
-17,conversation,வாழ்த்துக்கள்!,Valttukkal!,Congratulation!
-18,conversation,நீங்கள் இங்கு வசிக்கிறீர்களா?,Ninkal inku vacikkirirkala?,Do you live here?
-19,conversation,எங்ேக ேபாகிறாய்?,Enke pokiray?,Where are you going?
-20,conversation,நீ என்ன ெசய்து ெகாண்டிருக்கிறாய்?,Ni enna ceytu kontirukkiray?,What are you doing?
-21,conversation,நீங்கள் எங்கிருந்து வருகிறீர்கள்?,Ninkal enkiruntu varukirirkal?,Where are you from?
-22,conversation,நான் இருந்து…,Nan iruntu…,I am from … .
-23,conversation,நீங்கள் இங்ேக விரும்புகிறீர்களா?,Ninkal inke virumpukirirkala?,Do you like it here?
-24,conversation,"ஆம், நான் இங்ேக விரும்புகிேறன்","Am, nan inke virumpukiren","Yes, I like it here."
-25,conversation,நீங்கள் எவ்வளவு காலமாக இங்கு இருக்கிறீர்கள்?,Ninkal evvalavu kalamaka inku irukkirirkal?,How long are you here for?
-26,conversation,உங்கள் வயது என்ன?,Unkal vayatu enna?,How old are you?
-27,conversation,எனக்கு … வயது,Enakku… vayatu,I am … years old.
-28,conversation,உங்களுைடய ெதாழில் என்ன?,Unkalutaiya tolil enna?,What is your occupation?
-29,conversation,நான் ஒரு …,Nan oru…,I am a …
-30,conversation,நான் ேவைல ெசய்கிேறன்…,nan velai ceykiren…,I work in …
-31,conversation,நான் ஒரு மாணவன்,nan oru manavan,I am a student.
-32,conversation,நான் ஓய்வு ெபற்றவன்,nan oyvu perravan,I am retired.
-33,conversation,"உங்களுைடயது என்ன…? (மின்னஞ்சல், ெதாைலேபசி எண், முகவரி)","Unkalutaiyatu enna…? (Minnancal, tolaipeci en, mukavari)","What is your … ? (email, phone number, address)"
-34,conversation,"இேதா என் … . (மின்னஞ்சல், ெதாைலேபசி எண், முகவரி)","ito en… . (Minnancal, tolaipeci en, mukavari)","Here is my …. (email, phone number, address)"
-35,conversation,நீங்கள் Facebook அல்லது Twitter இல் இருக்கிறீர்களா?,ninkal Facebook allatu Twitter il irukkirirkala?,Are you on Facebook or Twitter?
-36,conversation,ெதாடர்பில் இருங்கள்!,Totarpil irunkal!,Keep in touch!
+id,category,tamil,translit,english,image
+1,conversation,மன்னிக்கவும். / மன்னிக்கவும்,Mannikkavum. / Mannikkavum,Excuse me. / Sorry.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqRiWksok_DcYcr4mPUzK19sx-yDbGwWkfwHP4BFlKupyfCyhRGjZco70ig&s
+2,conversation,கவைலப்படாேத,Kavalaippatate,Don`t worry.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGG6D-mso1NakBUqJSZ7L6KLTSCM5iOZLgI4KdVUY7UQ90FnrGP5EtRchbg&s
+3,conversation,காைல வணக்கம்,Kalai vanakkam,Good morning.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9_XY4DAngd9GfqE3PtrKL1wCZZ3Sr94pzCNi0km9_Rk3Ms00d4Zar5pbzqv4&s
+4,conversation,மதிய வணக்கம்,Matiya vanakkam,Good afternoon.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfU7K2vdN7KHlAZjk2h7mPmVJebtkr6dvdM1A-had2yTxj3m9dZBc1azY42g&s
+5,conversation,மாைல வணக்கம்,Malai vanakkam,Good evening.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmnSshhX2z2fgAAXL7qs1QHIm_SSW7UJ1mRlaBZ0AOFEs3b5u-a-h4PBH1lpI&s
+6,conversation,இனிய இரவு,Iniya iravu,Good night.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB7uAP38byDdmgILTRD7ogp0Licp2n9D18kfWgnYiLsHuHci-axRIOye6PvCE&s
+7,conversation,பிரியாவிைட,Piriyavitai,Goodbye.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCknBhlJNzpS1ivi4ELEu6qlB8r9a2bpgWVBZLZt7nPaScqn7M2Czlqj1QDQ&s
+8,conversation,வருகிேறன்,Varukiren,Bye.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLL4xa4wcPmWhwgWQ9ea3kQh-L5NoUqetRpn0LiabYHnyNVDUytxx-Z8D4oWo&s
+9,conversation,எப்படி இருக்கிறீர்கள்?,Eppati irukkirirkal?,How are you?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHvvlR_hjImGuBG0mW1E9l1nGcVA-PdhtXYxhE4QPFbuPhndd3r5Cg9SyYjg&s
+10,conversation,நான் நலமாக இருக்கிேறன். மற்றும் நீங்கள்?,Nan nalamaka irukkiren. Marrum ninkal?,I am fine. And you?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIG5H_9bUnMfpoMnhtDbTQ4JdosZClSKQD1cmPMKp3xeryhrKMWj3oae1FcQ&s
+11,conversation,உங்கள் ெபயர் என்ன?,Unkal peyar enna?,What is your name?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZDHnymHGvIubjDUyTTD20DwM1df6pQrdGjqjBgvD7145k0e8sGadqexK7w&s
+12,conversation,உங்கைள சந்திப்பதில் மகிழ்ச்சி அைடகிேறன்,Unkalai cantippatil makilcci ataikiren,I am pleased to meet you.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnlhPnQbfz6B96QE9pLlhuCB6zbm9ociSAJgtaE8966uroy4EcgGgOBjoSXQ0&s
+13,conversation,ஆசீர்வதிக்கிேறன்! (தும்மும்ேபாது),Acirvatikkiren! [tum'mumpotu],Bless you! (when sneezing),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqxq2Q4z-9lvgVpHz0bQ2L456CjZmsdisD5s6PdZYD2wRPRQc9jnc4mmJsNA&s
+14,conversation,வாழ்த்து,vaazhthu,Cheers!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQiYh8TQzp35z7U_gAf2BWvljj6Exc_ItRgoyzaK8HT52UHpqAfD24doR0g&s
+15,conversation,நல்ல அதிர்ஷ்டம்!,Nalla atirstam!,Good Luck!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW9JAGHPEBYRl30H0RA6DhVSWUv1ZhPo7UX4lP2l_nTmCNeGvlKwnk44Uaxw&s
+16,conversation,பிறந்தநாள் வாழ்த்துக்கள்!,Pirantanal valttukkal!,Happy Birthday!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJ70c9Sq_sfNywkmTngjtYiyG13PX386A9My7vaWVkfC6ORWp230XwhFFKA&s
+17,conversation,வாழ்த்துக்கள்!,Valttukkal!,Congratulation!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKPYNgllWYcxBj0nQJPiVhceaxZv6cRETp_ZVBzU0rmXXdptXot4sDH6WL9Q&s
+18,conversation,நீங்கள் இங்கு வசிக்கிறீர்களா?,Ninkal inku vacikkirirkala?,Do you live here?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh5dvU2iTUfRJm5wDGEJ8Cx8J8QfTPnoUl7TJJ-2935dQQBt7mCKK1KxK_FQ&s
+19,conversation,எங்ேக ேபாகிறாய்?,Enke pokiray?,Where are you going?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJg1syRBXDwAUVSdV6teLHlCNcQC7JEDHBtgGroDxe4kWdugsuYDxavxDoOrg&s
+20,conversation,நீ என்ன ெசய்து ெகாண்டிருக்கிறாய்?,Ni enna ceytu kontirukkiray?,What are you doing?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlws0Zta5eZhnMEuD0F6g35ySfB5wGUCohYLm_utocJg2eCYSiU-ooDcsK1B4&s
+21,conversation,நீங்கள் எங்கிருந்து வருகிறீர்கள்?,Ninkal enkiruntu varukirirkal?,Where are you from?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKj0UFATMJyGlFi_l2wKNxtnk7s2V0SuCubBfgTXxkNlXJ_qttpzy6H54Mh5c&s
+22,conversation,நான் இருந்து…,Nan iruntu…,I am from … .,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoH6TMth9oRJA2DoiTw2Y7zI78fRHptvwWXJqx0DK78p5N7FrLTRFkzntU3Os&s
+23,conversation,நீங்கள் இங்ேக விரும்புகிறீர்களா?,Ninkal inke virumpukirirkala?,Do you like it here?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxAwi5i45OhcuS-MExzuLHG78NeiMco_9peJhSxKRNWv3uVeBZbHUB0YrjA&s
+24,conversation,"ஆம், நான் இங்ேக விரும்புகிேறன்","Am, nan inke virumpukiren","Yes, I like it here.",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7BLIajezsidbjd719TGWvg0PZofqpY-MWQpxmPiu7yzxs-8GeckNv6VcdlA&s
+25,conversation,நீங்கள் எவ்வளவு காலமாக இங்கு இருக்கிறீர்கள்?,Ninkal evvalavu kalamaka inku irukkirirkal?,How long are you here for?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9GG0OMhkmsbIqy6fU9qdPmFstBQK9IsNdzqQ4mDZpo0YFCNET6vWG7YxEpoU&s
+26,conversation,உங்கள் வயது என்ன?,Unkal vayatu enna?,How old are you?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1j0DkBVOmafiB0js6mPmuh2hHKlaLD_SiG4aMmqQSuqLfDm03TDrlCD8ovf4&s
+27,conversation,எனக்கு … வயது,Enakku… vayatu,I am … years old.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQNUK6Uyd2N16gNg4cVNIIbPee2e0jmjsymI2iI90kHOdVEdObm1o17w8oT4&s
+28,conversation,உங்களுைடய ெதாழில் என்ன?,Unkalutaiya tolil enna?,What is your occupation?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOeMoy-V2sAiPr4ihBCprtVfGrqX4ytgQjzFJ_J0FNXK8uAzMdbcOEaQj6rg&s
+29,conversation,நான் ஒரு …,Nan oru…,I am a …,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYvglQwTMZ66ueXs4o0UfMLU22h1LFShriYLMpXtFclzq_wJQFeXsJ9IGYl7E&s
+30,conversation,நான் ேவைல ெசய்கிேறன்…,nan velai ceykiren…,I work in …,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJvhCv-BmyE9fCIdJMrlzeujD-Gk6YjSoMUIj6cqhCYtTnk5vdaNZVWPc1_A&s
+31,conversation,நான் ஒரு மாணவன்,nan oru manavan,I am a student.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUjIcpQVrdkPtXfo36IsFJetL2IDZYLqKr80gVG1grHeIrFzah2spEJuW0IA&s
+32,conversation,நான் ஓய்வு ெபற்றவன்,nan oyvu perravan,I am retired.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6soVJc1jnn0NwCpbjngfJ9Sv6bhJmAU5FYAm957OEaPHDAAi-SHCFjrdWqs&s
+33,conversation,"உங்களுைடயது என்ன…? (மின்னஞ்சல், ெதாைலேபசி எண், முகவரி)","Unkalutaiyatu enna…? (Minnancal, tolaipeci en, mukavari)","What is your … ? (email, phone number, address)",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7-ZxdZSrG9ESEazQ_08aKtXeWzfDug1gD0LXuE0hbKhP02ttGPu-3nY5Mg&s
+34,conversation,"இேதா என் … . (மின்னஞ்சல், ெதாைலேபசி எண், முகவரி)","ito en… . (Minnancal, tolaipeci en, mukavari)","Here is my …. (email, phone number, address)",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIY1fGrrynhP8m4EWyoCujBXb0UV250L-CXm0ZxfgTzGFKuQMdHlKmw_Xhdfw&s
+35,conversation,நீங்கள் Facebook அல்லது Twitter இல் இருக்கிறீர்களா?,ninkal Facebook allatu Twitter il irukkirirkala?,Are you on Facebook or Twitter?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm6gunfneu8cZp9ozRTZCrKpQWQ9f9pdX6PBxFtt4AMaMvZ7vIU6pcrVPTiA&s
+36,conversation,ெதாடர்பில் இருங்கள்!,Totarpil irunkal!,Keep in touch!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxf3koBKL3XgAoJLVyYhRYu9HsgrtCqKDQw7MBq_O8EjC8IWK7v3VsVCpig&s

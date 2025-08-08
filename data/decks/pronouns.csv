@@ -1,16 +1,16 @@
-id,category,tamil,translit,english
-1,pronouns,நான்,Nan,I
-2,pronouns,என்ைன,Ennai,Me
-3,pronouns,நீ,Ni,You (formal)
-4,pronouns,அவள்,Aval,She
-5,pronouns,நாம்,Nam,We (formal)
-6,pronouns,நாங்கள்,Nankal,We (informal)
-7,pronouns,அவர்கள்,Avarkal,They
-8,pronouns,என்,En,My
-9,pronouns,அவன் / அவள்,Avan / Aval,His / Her
-10,pronouns,எங்கள்,Enkal,Our
-11,pronouns,உங்கள்,Unkal,"Your (plural, informal)"
-12,pronouns,அவர்கள்,Avarkal,Their
-13,pronouns,அது,Athu,That
-14,pronouns,இைவ,Ivai,These
-15,pronouns,அைவ,Avai,Those
+id,category,tamil,translit,english,image
+1,pronouns,நான்,Nan,I,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbKoIeYnYp4cDQ58Ffq5uJ59vDmQHMGEXI8dx9KPC3LllXfUbOUpwg8wRq4g&s
+2,pronouns,என்ைன,Ennai,Me,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYSlvVntQ8dKC2mhh8knPAd5XABNxykW-X43lt0UZeYwiXzn0ZKhycZc7D3w&s
+3,pronouns,நீ,Ni,You (formal),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxkwe8iH2VONnWlgA8-i2HvD0iye7W8Q1SB3ccIg3zpqsOvPvQCq2am-3qv-Q&s
+4,pronouns,அவள்,Aval,She,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQss1VsK3DKWS8jSH_viquX8l1qGkq-VU_AGzUxeHoz4IU72AX16e2aPaySukQ&s
+5,pronouns,நாம்,Nam,We (formal),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThqQSxuPWMDcVxlrvVeh9gXJPo-04y2TPIsoRebUdLM1HDqRqhueaGyOUzwBE&s
+6,pronouns,நாங்கள்,Nankal,We (informal),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe6iibwd33kR8uSpL5GZi7N-u93TVuYTxt8FizT2wLkh-FhBCNty2eHXdKCw&s
+7,pronouns,அவர்கள்,Avarkal,They,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXp9iAuxah0JceLirJUFM_SUN3hDDnEIUQEhnK9fOBSjGz-Ulbk455DLeCQA&s
+8,pronouns,என்,En,My,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbFkYGbygvgEl2LJ4dwL8vhJuyFE-hQCgUQ6fa6KvZQXslP1e7Qj_sYIgRH-o&s
+9,pronouns,அவன் / அவள்,Avan / Aval,His / Her,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKdIhKd4X4khOw8YRIuDkZkX192M4Iq6QJ3LpRhPBTsBPzpuP6h7uC02tcsuY&s
+10,pronouns,எங்கள்,Enkal,Our,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAoP8m2f9ZI5wcmLU_T_8v40a3AQ8YukjQDT89BzCNQRqRiLeZBbiQ8Z5Zw&s
+11,pronouns,உங்கள்,Unkal,"Your (plural, informal)",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe6iibwd33kR8uSpL5GZi7N-u93TVuYTxt8FizT2wLkh-FhBCNty2eHXdKCw&s
+12,pronouns,அவர்கள்,Avarkal,Their,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5yfRYbWiLU_ROjWM_inJOUQjbaVatMloc4huBvysqZ4m0ygvcdoUFSymm7IU&s
+13,pronouns,அது,Athu,That,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXHzl9ZDt2YpvHCnPmDfrwkIe4996xo2y4Io9OQf-RtitllAvHjCNlETie9A&s
+14,pronouns,இைவ,Ivai,These,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkECfSyJ-4SCEFAnmD6kwkXKQ70q4gYF2gNnjn_NYXn-6-8zTM36rSUKg6-g&s
+15,pronouns,அைவ,Avai,Those,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY0Tq-VlBc3rpGPgQDwydGzMtFmlrd1i4SMja30KOBvVFJ_cQBkHXdxQ17fuA&s

@@ -1,6 +1,6 @@
-id,category,tamil,translit,english
-1,recreation,விளையாட்டு,viḷaiyāṭṭu,game
-2,recreation,திரைப்படம்,tiraippaṭam,movie
-3,recreation,நூல்,nūl,book
-4,recreation,இசை,icai,music
-5,recreation,நடனம்,naṭaṉam,dance
+id,category,tamil,translit,english,image
+1,recreation,விளையாட்டு,viḷaiyāṭṭu,game,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYp2Sslm2dqSQUtBXW4yxdpRCoCP2mnZIPA9-ZAyN0zJp01D9HfGHSHkiS8Q&s
+2,recreation,திரைப்படம்,tiraippaṭam,movie,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMq0OFupqSQkxC8r-_8rDGY7CT8l6aMnECstLDw9I9Kua6cd3QkEASQ5jbiU&s
+3,recreation,நூல்,nūl,book,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzodwxjPOxpCR615NRW_AMQ-PpRQUHPDRrtM5mnVvmkoUavCQUkz1rdyPcCQ&s
+4,recreation,இசை,icai,music,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkTyOqhnO-PHNFL0vINmWNhxarWzhQ8qnJlE9_6f44uIkWMIsBHb6UOXhjpAc&s
+5,recreation,நடனம்,naṭaṉam,dance,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXue4ol_FV_kg9UN8NDviRS5m2eVIKhqmLBEmy7cx8ZlEe8i1KZ52FoCrzag&s

@@ -1,11 +1,11 @@
-id,category,tamil,translit,english
-1,taxi,நான் (மதியம் 2 மணிக்கு) ஒரு டாக்ஸிைய விரும்புகிேறன்,Nan (matiyam 2 manikku) oru taksiyai virumpukiren,I would like a taxi at (2pm)
-2,taxi,டாக்ஸி ஸ்டாண்ட் எங்ேக?,taksi stant enke?,Where is the taxi stand?
-3,taxi,தயவுெசய்து என்ைன (இந்த முகவரிக்கு) அைழத்துச் ெசல்லுங்கள்,Tayavuceytu ennai (inta mukavarikku) alaittuc cellunkal,Please take me to (this address).
-4,taxi,தயவுெசய்து என்ைன [உணவகம்/ேஹாட்டல்/கைடக்கு] அைழத்துச்,ெசல்ல முடியுமா?,Could you please take me to [restaurant/hotel/shop]?
-5,taxi,தயவுெசய்து என்ைன விமான நிைலயம்/ரயில் நிைலயம்/பஸ்,நிைலயத்திற்கு அைழத்துச் ெசல்ல முடியுமா?,Could you please take me to the airport/train station/bus station?
-6,taxi,விைல ேபசித் தீர்மானிக்க முடியுமா?,Vilai pecit tirmanikka mutiyuma?,Is the price negotiable?
-7,taxi,எனக்கு தள்ளுபடி தர முடியுமா?,Enakku tallupati tara mutiyuma?,Can you give me a discount?
-8,taxi,மீட்டைர இயக்கவும்,Mittarai iyakkavum,Please turn on the meter.
-9,taxi,[இலக்கு] அைடய எவ்வளவு ேநரம் ஆகும்?,[Ilakku] ataiya evvalavu neram akum?,How long will it take to get to [destination]?
-10,taxi,இங்ேக நில்,Inke nil,Stop here.
+id,category,tamil,translit,english,image
+1,taxi,நான் (மதியம் 2 மணிக்கு) ஒரு டாக்ஸிைய விரும்புகிேறன்,Nan (matiyam 2 manikku) oru taksiyai virumpukiren,I would like a taxi at (2pm),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlB5gl5Olx16yMfnQai2D9M8gPsmdvkCMD9PQK1eqKityRphVDVkh89bC7w&s
+2,taxi,டாக்ஸி ஸ்டாண்ட் எங்ேக?,taksi stant enke?,Where is the taxi stand?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO4ROnMPvDW6XsbMblXKseL2bovQAW9DHcvEAmhpWATGibdrEzwGIMdsYlwLs&s
+3,taxi,தயவுெசய்து என்ைன (இந்த முகவரிக்கு) அைழத்துச் ெசல்லுங்கள்,Tayavuceytu ennai (inta mukavarikku) alaittuc cellunkal,Please take me to (this address).,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbN7kqtPP8zNPa9J4B6AE9iES2CE9VPZcwossFCtinvoNSIY-XlFoFmr34QA&s
+4,taxi,தயவுெசய்து என்ைன [உணவகம்/ேஹாட்டல்/கைடக்கு] அைழத்துச்,ெசல்ல முடியுமா?,Could you please take me to [restaurant/hotel/shop]?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbIg8EgcXfeTBm5waojX6vURIkR0zS-z7vFjo8folwRdCpxvGswCfykqtj8g&s
+5,taxi,தயவுெசய்து என்ைன விமான நிைலயம்/ரயில் நிைலயம்/பஸ்,நிைலயத்திற்கு அைழத்துச் ெசல்ல முடியுமா?,Could you please take me to the airport/train station/bus station?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvT9DtQobIjer1B2URPEzBw5a40RdTwI4DrrIplAnOIb_qQ7JxDahNejnQbPo&s
+6,taxi,விைல ேபசித் தீர்மானிக்க முடியுமா?,Vilai pecit tirmanikka mutiyuma?,Is the price negotiable?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1I1R71an79QeHokgnV6TJXql3hvRuoz_rK2QZvlsiaLRn0Lt-eHJcALJeKRU&s
+7,taxi,எனக்கு தள்ளுபடி தர முடியுமா?,Enakku tallupati tara mutiyuma?,Can you give me a discount?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOCwzxkD0VQPpK4ewtzHwOiejB6EiSu4JgmWOyEv_7OZ_MbUJi9yxTzfNVRw&s
+8,taxi,மீட்டைர இயக்கவும்,Mittarai iyakkavum,Please turn on the meter.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUP6QxgHvQ2O_NE8Alm1bDro53WCYaA-c_H4DQbny3MSvcrMNJB6RlgeVTXU&s
+9,taxi,[இலக்கு] அைடய எவ்வளவு ேநரம் ஆகும்?,[Ilakku] ataiya evvalavu neram akum?,How long will it take to get to [destination]?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVbHfa7dHRngWPGiglL_gBzu1ws8cJIWp2CHJ7niS3__4LzoCOkR-25QQsag&s
+10,taxi,இங்ேக நில்,Inke nil,Stop here.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTyhywCgFTFDrcWMHhBWQmdGblH39wZSkaqyDP6Ec5wuOWj5oo-5M1wjuRRQ&s

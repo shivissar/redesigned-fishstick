@@ -1,18 +1,18 @@
-id,category,tamil,translit,english
-1,health,அருகில் உள்ள மருத்துவமைன/மருத்துவர் எங்ேக?,Arukil ulla maruttuvamanai/maruttuvar enke?,Where is the nearest hospital/doctor?
-2,health,எனக்கு ஆங்கிலம்/இந்தி/தமிழ் ேபசும் மருத்துவர் ேதைவ,Enakku ankilam/inti/tamil pecum maruttuvar tevai,I need a doctor who speaks English/Hindi/Tamil.
-3,health,நான் ஒரு ஆண்/ெபண் மருத்துவைரப் பார்க்கலாமா?,Nan oru an/pen maruttuvaraip parkkalama?,Could I see a male/female doctor?
-4,health,அருகிலுள்ள ேவதியியலாளர் எங்ேக?,Arukilulla vetiyiyalalar enke?,Where is a nearest chemist?
-5,health,எனக்கு காய்ச்சல் இருக்கிறது,Enakku kayccal irukkiratu,I have a fever.
-6,health,எனக்கு உடம்பு சரியில்ைல,Enakku utampu cariyillai,I am sick.
-7,health,அவன்/அவள்/என் நண்பன் உடல்நிைல சரியில்லாமல் இருக்கிறான்,Avan/aval/en nanpan utalnilai cariyillamal irukkiran,He/She/My friend is sick.
-8,health,நான் வாந்தி எடுத்திருக்கிேறன்,Nan vanti etuttirukkiren,I have been vomiting.
-9,health,எனக்கு உயர ேநாய் உள்ளது,Enakku uyara noy ullatu,I have altitude sickness.
-10,health,எனக்கு …,Enakku …,I am allergic to …
-11,health,என்னால் எனது …,Ennal enatu …,I can't move my …
-12,health,என் (ைக/கால்) வீங்கியிருக்கிறது,En (kai/kal) vinkiyirukkiratu,My (hand/leg) is swollen.
-13,health,எனக்கு பல் வலி உள்ளது,Enakku pal vali ullatu,I have a toothache.
-14,health,என் பற்கள் உைடந்தன,En parkal utaintana,My dentures are broken.
-15,health,என் ஈறு வலிக்கிறது,En iru valikkiratu,My gum hurts.
-16,health,எனக்கு …க்கான மருந்துச் சீட்டு ேவண்டும்,Enakku … kkana maruntuc cittu ventum,I need a prescription for …
-17,health,நான் …,nan …,I am on medication for …
+id,category,tamil,translit,english,image
+1,health,அருகில் உள்ள மருத்துவமைன/மருத்துவர் எங்ேக?,Arukil ulla maruttuvamanai/maruttuvar enke?,Where is the nearest hospital/doctor?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTju68aF4k0wyi7BJk_l18rZqLxp3knJ-5-ttlPxBHa4BL5Udx6pAPxxGtMY-E&s
+2,health,எனக்கு ஆங்கிலம்/இந்தி/தமிழ் ேபசும் மருத்துவர் ேதைவ,Enakku ankilam/inti/tamil pecum maruttuvar tevai,I need a doctor who speaks English/Hindi/Tamil.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zYakjeLPDI6MjkcDA-SGTnCr3pm9eqNoMGpbKTVCKhz7pBWg7HSqQlnuMOc&s
+3,health,நான் ஒரு ஆண்/ெபண் மருத்துவைரப் பார்க்கலாமா?,Nan oru an/pen maruttuvaraip parkkalama?,Could I see a male/female doctor?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07zVmqG8IOfzXOCEb-tGoXOHFsvPf7V1vUDeBwa5lmb_y2CE6EotjCeJov4I&s
+4,health,அருகிலுள்ள ேவதியியலாளர் எங்ேக?,Arukilulla vetiyiyalalar enke?,Where is a nearest chemist?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRWe-Lb906C4xqKfuzdN-gfq63SwqVSSTno7815SjiqB4hBCk64ft3gAfkuwA&s
+5,health,எனக்கு காய்ச்சல் இருக்கிறது,Enakku kayccal irukkiratu,I have a fever.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOJ8V6bNfn_EoQ8UWCSoJrzDp8ZI_leURSnUku6fk6ChQfKVCfrVH83wmJg&s
+6,health,எனக்கு உடம்பு சரியில்ைல,Enakku utampu cariyillai,I am sick.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPCt4xyBfYWSvP5CQH9SpX8HouAviDpsmXUvd06nf3XyOKuClV96inBBjgig&s
+7,health,அவன்/அவள்/என் நண்பன் உடல்நிைல சரியில்லாமல் இருக்கிறான்,Avan/aval/en nanpan utalnilai cariyillamal irukkiran,He/She/My friend is sick.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-bYZNyxQ_oxWmDjmhTmslOTpgdprwOB1BSamWXdT_ooxDaJrTusDNKsZMdY&s
+8,health,நான் வாந்தி எடுத்திருக்கிேறன்,Nan vanti etuttirukkiren,I have been vomiting.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjpdNLiRGn3HOJSW4Uyn_maTHZObWLwf_zdumiQULm5v_ralbaCBp2kqabCg&s
+9,health,எனக்கு உயர ேநாய் உள்ளது,Enakku uyara noy ullatu,I have altitude sickness.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWF5EAyfNZzTJDlwI4fjkRCPFllDAtQ7neVTYU83ykb6PLn1P96nxCdGqC1w&s
+10,health,எனக்கு …,Enakku …,I am allergic to …,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCYjMPRMLT36jRI_FoEuTta5Up1T3qmrZhMylzM9nFG4dljCEV_gC1-_nCg&s
+11,health,என்னால் எனது …,Ennal enatu …,I can't move my …,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOdptbC8ezIK1o9-xflnN4jq6HXi3upfIwRU1WyyHeEuzuMLpd9TcPzY8oKA&s
+12,health,என் (ைக/கால்) வீங்கியிருக்கிறது,En (kai/kal) vinkiyirukkiratu,My (hand/leg) is swollen.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPu0oF22jrfDV-9K5XIfFQ9iCHedJZITHEgmipY9YkIlPbmBswjLqGbgi4dyk&s
+13,health,எனக்கு பல் வலி உள்ளது,Enakku pal vali ullatu,I have a toothache.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU6eDPg7eUzYLvRd6kgr_kFfk_t59Y6HFFe8S2_q3oM-d81QUcfX6mrAcIguI&s
+14,health,என் பற்கள் உைடந்தன,En parkal utaintana,My dentures are broken.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBFwdS0_RBnm7C2zjouLB0SVTqWPrQRY08_Uk3E0L67c-rKX1UWXDs4bYEg&s
+15,health,என் ஈறு வலிக்கிறது,En iru valikkiratu,My gum hurts.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ093gb-yb1riVY9-JdD3y5hYIDHoNwftay-zfOej9687PzDiJHdzIT2pEN5l0&s
+16,health,எனக்கு …க்கான மருந்துச் சீட்டு ேவண்டும்,Enakku … kkana maruntuc cittu ventum,I need a prescription for …,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHCADYTLaQYgg9WFQW97H53oF7fb6axdoTXuA90XfBKAq-sg5mn98VH5LTdg&s
+17,health,நான் …,nan …,I am on medication for …,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLM0jgy1fkNhiMfKB3YIA5LVW3KZjO6Bz6FLkS9VqeXntOtqyDD0wzVKig-w&s

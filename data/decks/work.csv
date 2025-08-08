@@ -1,6 +1,6 @@
-id,category,tamil,translit,english
-1,work,வேலை,vēlai,work
-2,work,அலுவலகம்,aluvலகம்,office
-3,work,சம்பளம்,campaḷam,salary
-4,work,கூட்டம்,kūṭṭam,meeting
-5,work,மேலாளர்,mēlāḷar,manager
+id,category,tamil,translit,english,image
+1,work,வேலை,vēlai,work,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3LtRev-mXMgbu17EzxPThb74--qmENUcVkKsc7euZfRKRM3EGKJk2TSgryJw&s
+2,work,அலுவலகம்,aluvலகம்,office,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8d7klnzobMNbujeglg6_msP9x8TUr96kTw0ednDawdGv2ZGeaH6xnukUo-g&s
+3,work,சம்பளம்,campaḷam,salary,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBraaM2A1_gPNuJTbXgUANMY2qfDg8ivt8euvqDYu_GU-mJ6Hq5N_x9Z5DGQ&s
+4,work,கூட்டம்,kūṭṭam,meeting,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlysgQ6Icb6JJCtxbpqmUSHsvTiJkRfHV4eW3vbIZj3m_fDWLongjE-bsvA&s
+5,work,மேலாளர்,mēlāḷar,manager,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4zgFpRwl9UDQNUkO_XFGW1H0m9ke4oto6Sc-qx23cChv1gnH81IUKXxvCg&s

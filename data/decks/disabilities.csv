@@ -1,7 +1,7 @@
-id,category,tamil,translit,english
-1,disabilities,எனக்கு ஊனம் உள்ளது,Enakku unam ullatu,I have a disability.
-2,disabilities,எனக்கு உதவி ேதைவ,Enakku utavi tevai,I need assistance.
-3,disabilities,ஊனமுற்ற கழிப்பைற உள்ளதா?,Unamurra kalipparai ullata?,Is there a disabled toilet?
-4,disabilities,லிப்ட் இருக்கிறதா?,Lipt irukkirata?,Is there a lift?
-5,disabilities,இந்தத் ெதருைவக் கடக்க எனக்கு உதவ முடியுமா?,Intat teruvaik katakka enakku utava mutiyuma?,Could you help me cross this street?
-6,disabilities,சக்கர நாற்காலி இடம் உள்ளதா?,Cakkara narkali itam ullata?,Is there a wheelchair space?
+id,category,tamil,translit,english,image
+1,disabilities,எனக்கு ஊனம் உள்ளது,Enakku unam ullatu,I have a disability.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQC-1u9813JYbep_vh1xPeNqQlVKFfxCrWr-Ow96n0wt1mXXaUBKOgnEjvmc&s
+2,disabilities,எனக்கு உதவி ேதைவ,Enakku utavi tevai,I need assistance.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhgr-5UjamKQFNnqybMadfUYoN5DCFm-008VkZ4qX50-VLqRyTBYoZnaoYsA&s
+3,disabilities,ஊனமுற்ற கழிப்பைற உள்ளதா?,Unamurra kalipparai ullata?,Is there a disabled toilet?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVDJexC21IqIKksl6DgcHYTws_me1RJwpVAD9ZIA4i64B4lex2iDrS4ITVLR4&s
+4,disabilities,லிப்ட் இருக்கிறதா?,Lipt irukkirata?,Is there a lift?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqoZ24ZiVArMQciPzklAPEwoY7G5321GdcmEEn0ZA7JHctoLWf4pvSw7yh32U&s
+5,disabilities,இந்தத் ெதருைவக் கடக்க எனக்கு உதவ முடியுமா?,Intat teruvaik katakka enakku utava mutiyuma?,Could you help me cross this street?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKtYaFmFIwmvBZZpJXYhMcUcTOpDdUH3dm-AUb97o4Nhgz4V1ej7A_wgCrQ&s
+6,disabilities,சக்கர நாற்காலி இடம் உள்ளதா?,Cakkara narkali itam ullata?,Is there a wheelchair space?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPSeBu_KavACZ9YaUhYWZ-Lx-jndbP5S4hD2D6nQBvufOho7MwowD-BdhxTKk&s

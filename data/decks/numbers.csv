@@ -1,54 +1,54 @@
-id,category,tamil,translit,english
-1,numbers,0 (பூஜ்யம்),0 - Pujyam,0 (zero)
-2,numbers,1 (ஒன்று),1 - onru,1 (one)
-3,numbers,2 (இரண்டு),2 - irantu,2 (two)
-4,numbers,3 (மூன்று),3 - munru,3 (three)
-5,numbers,4 (நான்கு),4 - nanku,4 (four)
-6,numbers,5 (ஐந்து),5 - aintu,5 (five)
-7,numbers,7 (ஏழு),7 - elu,7 (seven)
-8,numbers,8 (எட்டு),8 - ettu,8 (eight)
-9,numbers,9 (ஒன்பது),9 - onpatu,9 (nine)
-10,numbers,10 (பத்து),10 - pattu,10 (ten)
-11,numbers,11 (பதிெனான்று),11 - patinonru,11 (eleven)
-12,numbers,12 (பன்னிரண்டு),12 - pannirantu,12 (twelve)
-13,numbers,14 (பதிநான்கு),14 - patinanku,14 (fourteen)
-14,numbers,15 (பதிைனந்து),15 - patinaintu,15 (fifteen)
-15,numbers,16 (பதினாறு),16 - patinaru,16 (sixteen)
-16,numbers,17 (பதிேனழு),17 - patinelu,17 (seventeen)
-17,numbers,18 (பதிெனட்டு),18 - patinettu,18 (eighteen)
-18,numbers,20 (இருபது),20 - irupatu,20 (twenty)
-19,numbers,21 (இருபத்ெதான்று),21 - irupattonru,21 (twenty one)
-20,numbers,30 (முப்பது),30 - muppatu,30 (thirty)
-21,numbers,40 (நாற்பது),40 - narpatu,40 (forty)
-22,numbers,50 (ஐம்பது),50 - aimpatu,50 (fifty)
-23,numbers,60 (அறுபது),60 - arupatu,60 (sixty)
-24,numbers,80 (எண்பது),80 - enpatu,80 (eighty)
-25,numbers,90 (ெதாண்ணூறு),90 - tonnuru,90 (ninety)
-26,numbers,100 (நூறு),100 - nuru,100 (one hundred)
-27,numbers,101 (நூறு ஒன்று),101 - nuru onru,101 (one hundred one)
-28,numbers,200 (இருநூறு),200 - irunuru,200 (two hundred)
-29,numbers,500 (ஐநூறு),500 - ainuru,500 (five hundred)
-30,numbers,1000 (ஆயிரம்),1000 - ayiram,1000 (one thousand)
-31,numbers,2000 (இரண்டாயிரம்),2000 - irantayiram,2000 (two thousand)
-32,numbers,2001 (இரண்டாயிரத்து ஒன்று),2001 - irantayirattu onru,2001 (two thousand one)
-33,numbers,2102 (இரண்டாயிரத்து நூற்றி இரண்டு),2102 - irantayirattu nurri irantu,2102 (two thousand one hundred two)
-34,numbers,10000 (பத்தாயிரம்),10000 - pattayiram,10000 (ten thousand)
-35,numbers,1000000 (ஒரு மில்லியன்),1000000 - oru milliyan,1000000 (one million)
-36,numbers,1000000000 (ஒரு பில்லியன்),1000000000 - oru pilliyan,1000000000 (one billion)
-37,numbers,முதல் (1 ),st,First (1 )
-38,numbers,இரண்டாவது (2 ),nd,Second (2 )
-39,numbers,நான்காவது (4,வது,Fourth (4 )
-40,numbers,ஐந்தாவது (5,வது,Fifth (5 )
-41,numbers,ஆறாவது (6,வது,Sixth (6 )
-42,numbers,ஏழாவது (7,வது,Seventh (7 )
-43,numbers,எட்டாவது (8,வது,Eighth (8 )
-44,numbers,ஒன்பதாவது (9,வது,Ninth (9 )
-45,numbers,பத்தாவது (10,வது,Tenth (10 )
-46,numbers,குைறவாக,Kuraivaka,Less
-47,numbers,ேமலும்,melum,More
-48,numbers,1/2 (அைர),1/2 - arai,1/2 (a half)
-49,numbers,1/4 (கால்),1/4 - kal,1/4 (a quarter)
-50,numbers,அைனத்தும் / இல்ைல,anaittum/ illai,All / None
-51,numbers,சில / பல,cila/ pala,Some / Many
-52,numbers,எவ்வளவு?,evvalavu?,How Much?
-53,numbers,எத்தைன?,Ettanai?,How Many?
+id,category,tamil,translit,english,image
+1,numbers,0 (பூஜ்யம்),0 - Pujyam,0 (zero),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZ2sE9qkHtd3BtnaaTFw0QNQJ-0q79TbzsE9AMg6lj-fONIMDXZQ7iwtXQQ&s
+2,numbers,1 (ஒன்று),1 - onru,1 (one),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2uxssNItzPJAI_-RZWlU5A2F9gBKx_oQIWSbQ_vdGRysgwEk6wum2e1SXUQ&s
+3,numbers,2 (இரண்டு),2 - irantu,2 (two),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCV-hI0gIyJwL9ssoxt-HpbkUmTE4ndKzVe9Dw5ph74aFuf5Da31O6-q5SLqo&s
+4,numbers,3 (மூன்று),3 - munru,3 (three),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuw5nakLJrSUZH3FZHxl72rUh4u1TJSZQLciZ0uupgr0AcfEGlh7bUSLJ30Mo&s
+5,numbers,4 (நான்கு),4 - nanku,4 (four),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzT_2WaMxSJiDd9jVlHnyHj6RPX8dHEhVf5dxVuPFm7fWM3vSQueh7zlgtvQ&s
+6,numbers,5 (ஐந்து),5 - aintu,5 (five),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN9Riiasv8dATVwrGy1bkxJ33xDlsDxwy8MKpTwmG5edibeMNbR__6J4xvTw&s
+7,numbers,7 (ஏழு),7 - elu,7 (seven),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxa8GLaTCVzViPln1LkyZjVHTOWzGoHVIqkaGNstCSRO57OvEOHB_Rq_yLKI&s
+8,numbers,8 (எட்டு),8 - ettu,8 (eight),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr9nROr5QMbQt9la6NWrQrgWgmR9JWxpJdJmSyVOpgrjVg-Gnj0QCCR5sIJ9c&s
+9,numbers,9 (ஒன்பது),9 - onpatu,9 (nine),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqqM8QCgpbCM2GppNvYJiHtsilkDGYgQQdG9b51ClQm7QkKqq4f8R9JqSROU&s
+10,numbers,10 (பத்து),10 - pattu,10 (ten),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwyVKQHwZmj6SAV-1nx02-NZnFWNVYN_U8TxjqdH48YMZEU9wndnHgG5ElqAI&s
+11,numbers,11 (பதிெனான்று),11 - patinonru,11 (eleven),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TyxwZYCa-H8bX1bqx6tJHTNIf_Yq7FTvygp58Fkh8N12nGIMTxN6i1tmYA&s
+12,numbers,12 (பன்னிரண்டு),12 - pannirantu,12 (twelve),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtHjtPKmWmwt1mhr2f70FnlIcVMsPn91QX8eUUEiaL0oAa2m6uviNnPnLwXpw&s
+13,numbers,14 (பதிநான்கு),14 - patinanku,14 (fourteen),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYyLg5lhpT145eNa9BoGu8-jRwV--LQBMaYLO8eMizQ7D1NlSrvjjGot7pg&s
+14,numbers,15 (பதிைனந்து),15 - patinaintu,15 (fifteen),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu40Ov0LhJZYNGuyGaTmwjjJzUDetFcYAdEybL-skuNEmMIA__E5FiMNBg4l0&s
+15,numbers,16 (பதினாறு),16 - patinaru,16 (sixteen),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa01lbDiNfuzWfWY-MxG1sbCua5XFWd_jaCaJgIABdg19soCCe0C9iUqP-_g&s
+16,numbers,17 (பதிேனழு),17 - patinelu,17 (seventeen),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTeJWd_X4WxMDiQoejD0L4w61LF3fiuiFI55d1ytlhpxbOca27jujzhSKChOg&s
+17,numbers,18 (பதிெனட்டு),18 - patinettu,18 (eighteen),"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAD1BMVEUAAAALV9AMWM8LV9AMWM/cqVvwAAAABXRSTlMAv4D/QIO3/x8AAADqSURBVHgBxJFHEgIxDARnw51g7sQHYMSd+P83UZaqN99pkgu5vRpLf2arZSo7aJHablrmHMrpmGyze06V+mxOpoLyMTiMldaGlWUlC/QZK3cF5T9XtpvJYY1ZUQ5Sm0ZK6nfVoTwVd2Ku6H2RIs5VEmt/yk4Nu0Q70dizZhcn5ciyVl/4RCHi35Q4i5VcKT8UWLlCIUus5MpXRBSZGGXi4RQOrtC8CoRlLgTkSoZzWWsQ/SAURkXEJ4oLKIXNyVzJgpcZFAVBNM8lCxgpypB6qMDIyQlF8N6Uvn4jmPgxAb20GOLK4CoMVAUA2/FUWazwZNUAAAAASUVORK5CYII="
+18,numbers,20 (இருபது),20 - irupatu,20 (twenty),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFcTBRAHKUoyeaiVnH9ofRshnDDU9Pk_vXomifeETEAaJmpQb0WA9v1cxGw&s
+19,numbers,21 (இருபத்ெதான்று),21 - irupattonru,21 (twenty one),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bXoFEyD5Qa7XDYl_I82qnL24SdutAso2OnLBqylRbsqDxdJeAWG5TEOfuaY&s
+20,numbers,30 (முப்பது),30 - muppatu,30 (thirty),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6zGObkRntOL538zN9BP42Yy5uQWcQ82_G4urYw2nXrtYj_oeJh-P1grsEVw&s
+21,numbers,40 (நாற்பது),40 - narpatu,40 (forty),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKn8Yh7FDMvGVjB5lnFGweoSSjZanlUOv3ndvIYH98KnCf9NROPYnaeQjw5Jw&s
+22,numbers,50 (ஐம்பது),50 - aimpatu,50 (fifty),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeNunWMcCSXRftiRBT7grMSEMt1CnEBnEHHLzGWEXbRk2zWqjqkLkA6ippH8I&s
+23,numbers,60 (அறுபது),60 - arupatu,60 (sixty),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt295YrIFKnV4fwZAlGymI_wnfsWNgFs-7BYxwWi-XrxL8wbj254v-HywVRKw&s
+24,numbers,80 (எண்பது),80 - enpatu,80 (eighty),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyUU2xCgsSiu1pZK0VuBRH8nzJXeqUXUn-imk1klLVWn-R2Q-hiHszMhZaRo&s
+25,numbers,90 (ெதாண்ணூறு),90 - tonnuru,90 (ninety),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn8evVoZfR5-lP3RT_XeVkTXD9Gz_sQovC_9ajBMcoM2iapYuTrPaAJLjfIw&s
+26,numbers,100 (நூறு),100 - nuru,100 (one hundred),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5IHet4bNW9w04ZbUvB4GKWqhG-Os8HwClxVRRPlvYq-K8VpwLZ8-x5ceeIg&s
+27,numbers,101 (நூறு ஒன்று),101 - nuru onru,101 (one hundred one),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOAaFH9_igVpRODE8wuLIgefz8PnaVqq_rQgcuCqddKwH4vZBgGNYZ4UOUiI&s
+28,numbers,200 (இருநூறு),200 - irunuru,200 (two hundred),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxvtE_TyAEXWnoKy_WqC0g-jipEAS0Hw94EXTXvs04gRijGaeVitFTP7jkR0&s
+29,numbers,500 (ஐநூறு),500 - ainuru,500 (five hundred),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqj7A7BDMIDvpmvwOyspqB3tQjLH_ZUSiILn_DsPKurBpaIvq-4DMJUot2LA&s
+30,numbers,1000 (ஆயிரம்),1000 - ayiram,1000 (one thousand),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5k3RB3-n5_eC1EmEMKaRHT8GNY8Vq5MrcG-F3DvPT8XYWvkXehaCoUnmnDI&s
+31,numbers,2000 (இரண்டாயிரம்),2000 - irantayiram,2000 (two thousand),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7qTptnOpANfUmpyXDByYanOdIPYXpJVfOwzWH1NljL3dVsOo8Pgsid6LoRrA&s
+32,numbers,2001 (இரண்டாயிரத்து ஒன்று),2001 - irantayirattu onru,2001 (two thousand one),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQits5lfV8IVM4rzUdPjjfIhDHC7Otshvj-VAhyLYR7x_ivNKXtiLXxNKKpWnE&s
+33,numbers,2102 (இரண்டாயிரத்து நூற்றி இரண்டு),2102 - irantayirattu nurri irantu,2102 (two thousand one hundred two),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMNXdkq-SCHpTj8gwmXFs1z4i54CeSO4uUojYlR-8QgtNAAoKVtpdqocvNIA&s
+34,numbers,10000 (பத்தாயிரம்),10000 - pattayiram,10000 (ten thousand),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqRew75Jxc0pCUZ9KIDBTw49qq7SXOKiOaMTBQyjm6P_F6oeV_lMLRY3IfA&s
+35,numbers,1000000 (ஒரு மில்லியன்),1000000 - oru milliyan,1000000 (one million),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqse0Ky8VASnzZ-WR0560T5tXpsswGheoFb1Ri3K4cL8gyjkzIHmuXhn-KzQ&s
+36,numbers,1000000000 (ஒரு பில்லியன்),1000000000 - oru pilliyan,1000000000 (one billion),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_BmLNgUU8WLRtwrwkXcfcZYo2IYkEyVwrWEMivn41OWHfPmnvpUIl1pnbw&s
+37,numbers,முதல் (1 ),st,First (1 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu-pk9016BdFUnQu1tGveezDCEUrmtzUmPBYEHCn5dyW8oQnENybirSX_LAg4&s
+38,numbers,இரண்டாவது (2 ),nd,Second (2 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLMsuHA3-4UmGEMw77UyZfIZ9ykqke6-dnx8YPh78XCRmNVAXLxayBgl46Lw&s
+39,numbers,நான்காவது (4,வது,Fourth (4 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHVz84PgdTsohbOHY77YqyJR_tBYtIyltonuc9vSn0EzuT0celODusKyVVU4&s
+40,numbers,ஐந்தாவது (5,வது,Fifth (5 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJvSe4KnQXCyido8lC-oXOR7vdM-aCoU32azv90wamFL5p_wKgV4oJ0qb2bw&s
+41,numbers,ஆறாவது (6,வது,Sixth (6 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBKUxRpL34qETmWUVs6lvwOEfcVjyZnenKurtuMEgPnoYE7r1j3MDwdBpS6Tk&s
+42,numbers,ஏழாவது (7,வது,Seventh (7 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMnhznvWg6htYCmBEEVU8kk6mWdANXzAHnOzySWcJ0onVRBQ1ag0-5QKZ2UQ&s
+43,numbers,எட்டாவது (8,வது,Eighth (8 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfjVoWT6QqHifutzu1VidtiVaQPMCVqvU7WP-_TjAVrkhKpW7AoXMGTIwbmA&s
+44,numbers,ஒன்பதாவது (9,வது,Ninth (9 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Q_HO7Pq0sBgMSCNInXINP3sBRB_kziS3VBBegFHdMSk7BP5U7bMzbJf2yw&s
+45,numbers,பத்தாவது (10,வது,Tenth (10 ),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9ngA9qDC4rmsUcyU6S-lSqOjS4UA9Q6k0jqcDJlflS_tKvtON6DrdfUlsHw&s
+46,numbers,குைறவாக,Kuraivaka,Less,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4blmldyvEsc_N3UFKHw7v7T4101W7iZp4EJ90Nnfo4VXqlbJzG-aHH0VI2Jk&s
+47,numbers,ேமலும்,melum,More,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_U5yHRiRGJI92kG219kR55DGEI_8SU7Uoz-H6wEdzk3Ce4gVq1oD9o7l9_Q&s
+48,numbers,1/2 (அைர),1/2 - arai,1/2 (a half),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_blWhgPCl2nT2GrcKi4LXoGQxUUzttUsAIaRgC1jlNmtgTXO1yr_lI7R8-u8&s
+49,numbers,1/4 (கால்),1/4 - kal,1/4 (a quarter),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1d_8VHZgYoX2jJNc2MW0ZgsbPwDu4-E6F95RcUPB_vUUG_DEcSI_qcpFNGw&s
+50,numbers,அைனத்தும் / இல்ைல,anaittum/ illai,All / None,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJUQ0MrkwNp89NZHyTe9EQTVVZTVVEyonVF9Vmc_US4JIKjMILXYz-LMYZg&s
+51,numbers,சில / பல,cila/ pala,Some / Many,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiwxfGEm_9iLuRqfpP1WU4XsUoXnPA5bX7etnthkuDjYMP7sFrhex444Ktsg&s
+52,numbers,எவ்வளவு?,evvalavu?,How Much?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoL2nId4cxdemYLndaHNfepJijoEAZsMk9irNFn37N_hjpYRJ9EZXEb2lqeg&s
+53,numbers,எத்தைன?,Ettanai?,How Many?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoL2nId4cxdemYLndaHNfepJijoEAZsMk9irNFn37N_hjpYRJ9EZXEb2lqeg&s

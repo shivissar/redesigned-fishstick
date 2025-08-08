@@ -1,20 +1,20 @@
-id,category,tamil,translit,english
-1,time_relations,காைல,Kalai,Morning
-2,time_relations,மதியம்,matiyam,Afternoon
-3,time_relations,சாயங்காலம்,cayankalam,Evening
-4,time_relations,இரவு,iravu,Night
-5,time_relations,இன்று,inru,Today
-6,time_relations,நாைள காைல,nalai kalai,Tomorrow Morning
-7,time_relations,நாைள மறுநாள்,nalai marunal,Day After Tomorrow
-8,time_relations,ேநற்று,nerru,Yesterday
-9,time_relations,ேநற்று மாைல,nerru malai,Yesterday Evening
-10,time_relations,ேநற்றுமுன் தினம்,nerrumun tinam,Day Before Yesterday
-11,time_relations,இந்த மாதம் / அடுத்த மாதம் / கடந்த மாதம்,inta matam/ atutta matam/ katanta matam,This Month / Next Month / Last Month
-12,time_relations,இந்த ஆண்டு / அடுத்த ஆண்டு / கடந்த ஆண்டு,inta antu/ atutta antu/ katanta antu,This Year / Next Year / Last Year
-13,time_relations,இப்ேபாது,ippotu,Now
-14,time_relations,பின்னர்,pinnar,Later
-15,time_relations,முன்பு,munpu,Before
-16,time_relations,ேம மாதம் வைர,me matam varai,Until May
-17,time_relations,ஒரு மணி ேநரத்திற்குள்,oru mani nerattirkul,Within an hour
-18,time_relations,(மூன்று) நாட்களில்,(munru) natkalil,In (three) days
-19,time_relations,(பத்து) நிமிடங்களில்,(pattu) nimitankalil,In (ten) minutes
+id,category,tamil,translit,english,image
+1,time_relations,காைல,Kalai,Morning,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQeNQwWFxnX2whD9nE_NlAXmWTCUyTfZSAZqGEeVe_npPeaKEV9xZBGHtZtkY&s
+2,time_relations,மதியம்,matiyam,Afternoon,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCyNx5g6QgFdwuUm4nMt7AtgnpeEmyCmddRJ_makoQxi2tIv2qiI_mY5CP18&s
+3,time_relations,சாயங்காலம்,cayankalam,Evening,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30rbwCgX_ViVBITR_iJzuylLhdZKHrtsf7epYqts_J1BpBFrwWiFDuUrDVg&s
+4,time_relations,இரவு,iravu,Night,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeMU9rF8OTNL3twjXUuKxAlzT9e1x531EGIRv-wruMAtoMeckYyEpyke_Xhw&s
+5,time_relations,இன்று,inru,Today,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9adQ6cQcK1mtmpVhlJ-G2zRDtQmBMjRQOp9Mc0VutecxeKMVt4tK1nC3jmlw&s
+6,time_relations,நாைள காைல,nalai kalai,Tomorrow Morning,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzICX8tZV8t97QDd5RJXTOms-BzG7kuDb3jltDNuOFeCCEQ_wgF8adqqNbhOc&s
+7,time_relations,நாைள மறுநாள்,nalai marunal,Day After Tomorrow,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xg0U6kmGchidN3fuuG2_dTtjCnc6FiV3KUcuabcmJkiabdx_aCO-sYcJIlA&s
+8,time_relations,ேநற்று,nerru,Yesterday,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZSIF-as27iDgZYOaYMcTSKV-Bda6D9Q5-0WGd7gZLnN8c7VfZsa0LxOS50Q&s
+9,time_relations,ேநற்று மாைல,nerru malai,Yesterday Evening,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXrbJF36qEK3iIoZLYTuJdfEWCUqApnD-0UmfCFgnUFHHAdyz6eAJTjALWRc&s
+10,time_relations,ேநற்றுமுன் தினம்,nerrumun tinam,Day Before Yesterday,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlsOD36i-h5GmGv1KtqXTvKgtYHvRjFcg24oS7vqYsDxeLGCttYzv--Ov5GgA&s
+11,time_relations,இந்த மாதம் / அடுத்த மாதம் / கடந்த மாதம்,inta matam/ atutta matam/ katanta matam,This Month / Next Month / Last Month,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtaRAZAIsdU5KX2mgUfsCbRCTLHoFAw1IYsgUrSKm_n0AxYI0v-gJZu-PcjQ&s
+12,time_relations,இந்த ஆண்டு / அடுத்த ஆண்டு / கடந்த ஆண்டு,inta antu/ atutta antu/ katanta antu,This Year / Next Year / Last Year,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQquCFxOLk-y0A5olafJlANtarGyuaf1U_7blUZbLJRDzj4F7ItvtcoI3m8fg&s
+13,time_relations,இப்ேபாது,ippotu,Now,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzTugoTNqoalftsM-1tUflk5-tT5NuuyhmoWEJXbz_evRbdBEBhMa4BqyVsA&s
+14,time_relations,பின்னர்,pinnar,Later,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwbsReNF0rQZXv3Q3AlHauRqTvyvVOIreRx0zsdjD15sHoLHGw65unHIdD1O4&s
+15,time_relations,முன்பு,munpu,Before,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxAMZgwfs5rw2DIyk7j2q0WDZYQJum6QTO_4xw--wVONSd9LRtMC5L82pL40&s
+16,time_relations,ேம மாதம் வைர,me matam varai,Until May,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBAPCnaB3ouutRAshffVPnYmVTwnylLg4YyXTHEKCCny1cZNTZq3i1UeiQ3A&s
+17,time_relations,ஒரு மணி ேநரத்திற்குள்,oru mani nerattirkul,Within an hour,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MQWwdbivYcG8xeIrqNB1P9DYeOoWiY1rxOj_mcWyLge-Pe1R1XC1H_oFjCo&s
+18,time_relations,(மூன்று) நாட்களில்,(munru) natkalil,In (three) days,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkvH-_V9hRMscBd3Dy4M_xR0MYPwVq-tkJTepSa15cGHm-t2M5TLMxHFGJQ&s
+19,time_relations,(பத்து) நிமிடங்களில்,(pattu) nimitankalil,In (ten) minutes,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAqPqMPCaoG27q25zQQacSphcBvMgP73RjZvTIkS19iUFRI1MJqfsyS9GE8E&s

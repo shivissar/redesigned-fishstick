@@ -1,10 +1,10 @@
-id,category,tamil,translit,english
-201,food,உணவு,unavu,Food
-202,food,தண்ணீர்,thanneer,Water
-203,food,சைவம்,saivam,Vegetarian
-204,food,மாமிசம்,maamisam,Meat
-205,food,உருசி குறைவு,urusi kuraivu,Less spicy
-206,food,மிகவும் காரம்,migavum kaaram,Very spicy
-207,food,வெங்காயம் இல்லாமல்,vengayam illamal,Without onion
-208,food,ஒரு காபி,oru kaapi,One coffee
-209,food,பில் கொடுத்துவிடுங்கள்,bill koduththuvidungal,Please give the bill
+id,category,tamil,translit,english,image
+201,food,உணவு,unavu,Food,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlEc2rStJPrSDyTx1IvyWBKwOpc-VDjXugxtpkRGOTF1FXhrOk3mtfzxgPAQ&s
+202,food,தண்ணீர்,thanneer,Water,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgtOuvmsX-V41eqPBH77kpMs-M-syKnojNVMUn_Yq0tWLg0Jc1o1oR0oH2fw&s
+203,food,சைவம்,saivam,Vegetarian,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4GRupSOIO4QEU_eQ3qdID2LucAuAMIFMEllJUJHkmcu_xFFk13OOb0SUgJIo&s
+204,food,மாமிசம்,maamisam,Meat,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30utLr6sk8gt4t4TRxuXc6wiHRJkKvHTfE3MKuJbA2g1_K-ebVzlgrfWnxQ&s
+205,food,உருசி குறைவு,urusi kuraivu,Less spicy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGKs8xmWYz0tmX0Q6z7hwIaBgNub6mx0ocqogjMWYrN38EKKdbQhABTK4kI84&s
+206,food,மிகவும் காரம்,migavum kaaram,Very spicy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5_H2L24QdbUqPtTIX42eFtqVlg4eGE8EbGNOX779GKK2KHLMecuNfykIwec&s
+207,food,வெங்காயம் இல்லாமல்,vengayam illamal,Without onion,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaCvU7XPJeSGDGFihwMbNUNyDg2QBaaKrEoncvpR8y5OWdnh83q2HBvjKBGi0&s
+208,food,ஒரு காபி,oru kaapi,One coffee,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGPegDK_dghn6tbXwBBVSz3_9nw1lUq4daFiz2Xvox6IvjgYvWV4Q7JRgViE&s
+209,food,பில் கொடுத்துவிடுங்கள்,bill koduththuvidungal,Please give the bill,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuGQDH48uT7x5owo9aSYezsDxG65FnsX0TCCUA9mlohqViTx3B03TZVEvzMQ&s

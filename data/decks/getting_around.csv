@@ -1,7 +1,7 @@
-id,category,tamil,translit,english
-1,getting_around,மிருகக்காட்சிசாைலக்கு நான் எப்படி ெசல்வது?,Mirukakkatcicalaikku nan eppati celvatu?,How do I get to the Zoo?
-2,getting_around,ெபாது ேபாக்குவரத்து மூலம் நாம் அங்கு ெசல்ல முடியுமா?,Potu pokkuvarattu mulam nam anku cella mutiyuma?,Can we get there by public transport?
-3,getting_around,ேபருந்து / ரயில் / விமானம் எத்தைன மணிக்கு புறப்படும்?,Peruntu/ rayil/ vimanam ettanai manikku purappatum?,What time does the bus / train / plane leave?
-4,getting_around,எத்தைன மணிக்கு வரும்?,Ettanai manikku varum?,What time does it arrive?
-5,getting_around,எவ்வளவு காலம் தாமதமாகும்,Evvalavu kalam tamatamakum,How long will it be delayed
-6,getting_around,இந்த இருக்ைக இலவசமா?,inta irukkai ilavacama?,Is this seat free?
+id,category,tamil,translit,english,image
+1,getting_around,மிருகக்காட்சிசாைலக்கு நான் எப்படி ெசல்வது?,Mirukakkatcicalaikku nan eppati celvatu?,How do I get to the Zoo?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9gRPrXCchMrP8bbbsS86cfhkCDAC0RbKEvOCnB5AKdZDnYhCOTsLnXtM0SvU&s
+2,getting_around,ெபாது ேபாக்குவரத்து மூலம் நாம் அங்கு ெசல்ல முடியுமா?,Potu pokkuvarattu mulam nam anku cella mutiyuma?,Can we get there by public transport?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVdZRXcUDsrt1QPDIcquE_EIaeg9RcG4xK-2Zojppk4hJrRg2LxguHtRNIegE&s
+3,getting_around,ேபருந்து / ரயில் / விமானம் எத்தைன மணிக்கு புறப்படும்?,Peruntu/ rayil/ vimanam ettanai manikku purappatum?,What time does the bus / train / plane leave?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIs5JAuGg1rL3zmBYgVjr09wlIBJjmPkQexoy20X9LErcq1TSGCA_8cYkTDw&s
+4,getting_around,எத்தைன மணிக்கு வரும்?,Ettanai manikku varum?,What time does it arrive?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTUwWIoD3QL-MvhN5iJ7H5_j8vc02pvDQzDUChUCuoyuChFipFBOyWjX3p90&s
+5,getting_around,எவ்வளவு காலம் தாமதமாகும்,Evvalavu kalam tamatamakum,How long will it be delayed,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAKMaNJ2G7zHYRclxh2tnkFsTa5s20zycdGtR4K-CRvPAIqSEnh2de5ioWzg&s
+6,getting_around,இந்த இருக்ைக இலவசமா?,inta irukkai ilavacama?,Is this seat free?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWic4J7rEr31blC--uwQmV5Rdrp0TVD9sF5iefZGb7jpe5GpDQbk91VpPWZQ&s

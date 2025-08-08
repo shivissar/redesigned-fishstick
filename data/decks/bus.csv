@@ -1,5 +1,5 @@
-id,category,tamil,translit,english
-1,bus,எந்த ேபருந்து (நிைலயத்திற்கு) ெசல்கிறது?,Enta peruntu (nilaiyattirku) celkiratu?,Which bus goes to (the station)?
-2,bus,பஸ் எண் என்றால் என்ன?,Pas en enral enna?,What is the bus number?
-3,bus,அடுத்த நிறுத்தம் என்ன?,Atutta niruttam enna?,What is the next stop?
-4,bus,நான் … இல் இறங்க விரும்புகிேறன்,Nan … il iranka virumpukiren,I would like to get off at … .
+id,category,tamil,translit,english,image
+1,bus,எந்த ேபருந்து (நிைலயத்திற்கு) ெசல்கிறது?,Enta peruntu (nilaiyattirku) celkiratu?,Which bus goes to (the station)?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKd10kfjc1UZPRHJedPCt-qUoRkmHxXJ-UQfGPHZS0NeGUYJvUbD2hm_5EPY&s
+2,bus,பஸ் எண் என்றால் என்ன?,Pas en enral enna?,What is the bus number?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZAgdb7lcOTIVjMnV-vg_7L2IphobAHkJ_0ZjD_IBrvxu-Ipdlp3ASvlzVOj0&s
+3,bus,அடுத்த நிறுத்தம் என்ன?,Atutta niruttam enna?,What is the next stop?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxc_Ip8jpBqPU4-JLUzijDoK578B46RimlWm_7zkmylu49moVWtDs6dOKk6Ps&s
+4,bus,நான் … இல் இறங்க விரும்புகிேறன்,Nan … il iranka virumpukiren,I would like to get off at … .,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoYPLwkIvz2QNqSfoyeccbhPOP1V0ZSnKSlo6qoKQTawanTW5Ct7dKi09pkw&s

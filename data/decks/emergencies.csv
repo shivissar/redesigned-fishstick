@@ -1,10 +1,10 @@
-id,category,tamil,translit,english
-1,emergencies,உதவி!,Utavi!,Help!
-2,emergencies,திருடன்!,Tirutan!,Thief!
-3,emergencies,ெநருப்பு!,Neruppu!,Fire!
-4,emergencies,நிறுத்து!,Niruttu!,Stop!
-5,emergencies,இது ஒரு அவசரநிைல!,Itu oru avacaranilai!,It's an emergency!
-6,emergencies,உங்களிடம் முதலுதவி ெபட்டி இருக்கிறதா?,Unkalitam mutalutavi petti irukkirata?,Do you have a first-aid kit?
-7,emergencies,ஆம்புலன்ைஸ அைழக்கவா?,Ampulansai alaikkava?,Call an ambulance?
-8,emergencies,தயவுெசய்து எங்களுக்கு/எனக்கு உதவ முடியுமா?,Tayavuceytu enkalukku/enakku utava mutiyuma?,Could you please help us/me?
-9,emergencies,நான் ெதாைலந்துவிட்ேடன்,Nan tolaintuvitten,I'm lost
+id,category,tamil,translit,english,image
+1,emergencies,உதவி!,Utavi!,Help!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmzLKJ47SPE-k5BClv1sTtNqdDidBuhAtJbfwIkv6CeqkAMa2RYVf9l6KLQ&s
+2,emergencies,திருடன்!,Tirutan!,Thief!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBPD4fhuWutqwueR-FEPKq_kTlhVTfbdkvGTUDvtSTJBPhkI2MlBQ_zknwIw&s
+3,emergencies,ெநருப்பு!,Neruppu!,Fire!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc1DEnhowsiM7pJZOv3CDzhikES8A7hfQLBSCnYIxX9bqUH5v-FfPo4zzccZg&s
+4,emergencies,நிறுத்து!,Niruttu!,Stop!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNlZjVGWiPN4vZ-EPeNIgOfBkzMwjuJ3gNojZfz63zUPD5l7JZyeRMjp7CEY&s
+5,emergencies,இது ஒரு அவசரநிைல!,Itu oru avacaranilai!,It's an emergency!,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkDms4IkOHXeF9GrSEZv4XgWYSPY9ia7qR1swZVit9H964VicKi48Z-kWZ-LQ&s
+6,emergencies,உங்களிடம் முதலுதவி ெபட்டி இருக்கிறதா?,Unkalitam mutalutavi petti irukkirata?,Do you have a first-aid kit?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgA75BIl7gJT_xiaDX6vBjwYAocbtxNiMVYAZ0w284iXH-f7xIBrz740Af6Q&s
+7,emergencies,ஆம்புலன்ைஸ அைழக்கவா?,Ampulansai alaikkava?,Call an ambulance?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNAwRe9wEhE4H5PZ_2DkZsU2ytZm2eErF5gQXkpmq2wM0GYHFoZorZQguvtVE&s
+8,emergencies,தயவுெசய்து எங்களுக்கு/எனக்கு உதவ முடியுமா?,Tayavuceytu enkalukku/enakku utava mutiyuma?,Could you please help us/me?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSZmGQTW_koxdq6DZt1MsB9G844eJaQ-SUVnGrezL2hJSMAcQmJIypIotVlw&s
+9,emergencies,நான் ெதாைலந்துவிட்ேடன்,Nan tolaintuvitten,I'm lost,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTma5EepyksqfXwdab0njwPsN4P_ZCX5F2VfUOg_Tpi6G-A1czlMF8HCclSDA&s

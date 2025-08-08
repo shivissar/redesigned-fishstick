@@ -1,6 +1,6 @@
-id,category,tamil,translit,english
-1,family,அப்பா,appā,father
-2,family,அம்மா,ammā,mother
-3,family,சகோதரன்,cakōtaraṉ,brother
-4,family,சகோதரி,cakōtari,sister
-5,family,குழந்தை,kuḻantai,child
+id,category,tamil,translit,english,image
+1,family,அப்பா,appā,father,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQF_bkmQ06FMXUN6b98a2ZZ2kLyvIqiBKQnUP0rHG4X1JuSEUx9wDpterMes&s
+2,family,அம்மா,ammā,mother,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMtRYIZIq1j6SpmywliFlcx2_4cjWMphnet4kxl0Y0bQcXxHNwrXWZHb74Yg&s
+3,family,சகோதரன்,cakōtaraṉ,brother,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pymal6BTkxC6RRokNxStdkDnoF4Y6NU0fD2SpWVQVrrM_ZieDqv1AoqMCIQ&s
+4,family,சகோதரி,cakōtari,sister,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2uZdU3jehkdfDi8Hq-R6uqkPh87W0Sqy1qfU-s36HM4caVAjdl-WbRSrgWA&s
+5,family,குழந்தை,kuḻantai,child,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGmQN_wVC2CvU-HE1aO1qnz_ctOx2JI0hkpto3uN3W_6Vce1rGqgjwUTHBSmA&s

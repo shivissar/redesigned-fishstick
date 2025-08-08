@@ -1,8 +1,8 @@
-id,category,tamil,translit,english
-1,train,ரயில் எத்தைன மணிக்கு புறப்படும்?,Rayil ettanai manikku purappatum?,What time does the train depart?
-2,train,ரயில் எந்த பிளாட்பாரத்தில் இருந்து புறப்படுகிறது?,Rayil enta pilatparattil iruntu purappatukiratu?,Which platform does the train leave from?
-3,train,[இலக்கு] ெசல்ல ேநரடி ரயில் உள்ளதா?,[Ilakku] cella nerati rayil ullata?,Is there a direct train to [destination]?
-4,train,அடுத்த ரயில் எப்ேபாது வரும்?,Atutta rayil eppotu varum?,When does the next train arrive?
-5,train,எனக்கு [வகுப்பு] டிக்ெகட் ேவண்டும்,Enakku [vakuppu] tikket ventum,I would like a ticket for [class]
-6,train,இந்த இருக்ைக ஒதுக்கப்பட்டுள்ளதா?,inta irukkai otukkappattullata?,Is this seat reserved?
-7,train,[இலக்கு] எவ்வளவு தூரம் பயணம்?,[Ilakku] evvalavu turam payanam?,How long is the journey to [destination]?
+id,category,tamil,translit,english,image
+1,train,ரயில் எத்தைன மணிக்கு புறப்படும்?,Rayil ettanai manikku purappatum?,What time does the train depart?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOVEVlzagC9_dFAxdxptsmvvLjJJJReB8nll0lgG3-N0XaDf2wM6Lhj1JftJ4&s
+2,train,ரயில் எந்த பிளாட்பாரத்தில் இருந்து புறப்படுகிறது?,Rayil enta pilatparattil iruntu purappatukiratu?,Which platform does the train leave from?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PHK9ONMOSq8fgGnEpj9janJ7Vp7JBXJ7bHDdmz5hRZs4PEJ5--cdIXdG2A&s
+3,train,[இலக்கு] ெசல்ல ேநரடி ரயில் உள்ளதா?,[Ilakku] cella nerati rayil ullata?,Is there a direct train to [destination]?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3z9-KokZp1sZTV5twVFkGJYHT4Wdy_XlMxr8KZi0CVs17UdxQYRLb8Zow54&s
+4,train,அடுத்த ரயில் எப்ேபாது வரும்?,Atutta rayil eppotu varum?,When does the next train arrive?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fWYVsjuMP4mCZQMILb1D-5yVYWo3iBWMCOKc_TDbFXKpE7KcZ7QUYxsbQQ&s
+5,train,எனக்கு [வகுப்பு] டிக்ெகட் ேவண்டும்,Enakku [vakuppu] tikket ventum,I would like a ticket for [class],https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnSVMOq4ITDjJw58W2ssh-PUFU16nOXSa1AFf12c2c30cQ4qpME9cHuzDnQ&s
+6,train,இந்த இருக்ைக ஒதுக்கப்பட்டுள்ளதா?,inta irukkai otukkappattullata?,Is this seat reserved?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdQu2IpryYgKnSC3dW_9-toqn5PGihEs_7KOzSzbyXCj0hksDnF48-T7N7QA&s
+7,train,[இலக்கு] எவ்வளவு தூரம் பயணம்?,[Ilakku] evvalavu turam payanam?,How long is the journey to [destination]?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUQgL_68sAerTyp6wONI5ouonLl_oOv64GTi6cwBX2oozGhjVR6k7-13XVg&s

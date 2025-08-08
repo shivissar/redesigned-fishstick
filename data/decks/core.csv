@@ -1,21 +1,21 @@
-id,category,tamil,translit,english
-1,greetings,வணக்கம்,vanakkam,Hello
-2,greetings,நன்றி,nandri,Thank you
-3,greetings,மன்னிக்கவும்,mannikkavum,Sorry / Excuse me
-4,greetings,தயவுசெய்து,thayavu seithu,Please
-5,greetings,என் பெயர் ___,en peyar ___,My name is ___
-6,greetings,உங்களை சந்தித்ததில் மகிழ்ச்சி,ungalai sandhithathil magilchi,Nice to meet you
-7,polite,ஆமாம்,aamam,Yes
-8,polite,இல்லை,illai,No
-9,polite,சரி,sari,Okay / Correct
-10,basics,எப்படி இருக்கிறீர்கள்?,eppadi irukkireergal?,How are you? (formal)
-11,basics,நான் நன்றாக இருக்கிறேன்,naan nandraga irukkiren,I am fine
-12,time,இன்று,indru,Today
-13,time,நாளை,naalai,Tomorrow
-14,time,நேற்று,netru,Yesterday
-15,questions,எங்கே?,enge?,Where?
-16,questions,என்ன?,enna?,What?
-17,travel,கழிப்பறை எங்கே?,kazhipparai enge?,Where is the bathroom?
-18,travel,எவ்வளவு?,evvalavu?,How much?
-19,travel,எனக்கு புரியவில்லை,enakku puriyavillai,I don’t understand
-20,travel,ஆங்கிலம் பேசுவீங்களா?,aangilam pesuvingalaa?,Do you speak English?
+id,category,tamil,translit,english,image
+1,greetings,வணக்கம்,vanakkam,Hello,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUc9wGevpwulreUjx2mTmDLfFOk7uOoN3eIH8SOcBx39MgFcCew8XF-UsIOjQ&s
+2,greetings,நன்றி,nandri,Thank you,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbOpRVfQZAqgmUMESlYvXRJW0em4NIxfdnI8O58B7UAOPqa6P2kBD9HpvMqfk&s
+3,greetings,மன்னிக்கவும்,mannikkavum,Sorry / Excuse me,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTD0qrS-sThXv2_yViBWWfjzNQ5SZVsHCl5jcxidnPOIe3qQQDTkci-isWbuU&s
+4,greetings,தயவுசெய்து,thayavu seithu,Please,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGCqLGwHdkApydrFB5IX4QzzNDqnlNguDA00N3hC_S6tKM0VQ6x1iUTGFdwg&s
+5,greetings,என் பெயர் ___,en peyar ___,My name is ___,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7MycGwnVksDLye667ojdJx2gnl6O701qHFQtcJkRJSiZj66a2nAkFzsAFyfw&s
+6,greetings,உங்களை சந்தித்ததில் மகிழ்ச்சி,ungalai sandhithathil magilchi,Nice to meet you,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEg1mGaSgwnPHBfr99gGjvvjveuzK9RidBlI6Ycvcug5hecUnWrdViQlpmWAo&s
+7,polite,ஆமாம்,aamam,Yes,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-d4XuO3pJIPoTmwdwP12OSH0ICDhG3VOsBlkLRHLQvKXATytGjKomeO2syqk&s
+8,polite,இல்லை,illai,No,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLYQ_J9CzHy7mP80ziaNl7D_whHrd9CLbSkuYR8iGxIcEu-UgMlAPBT8qmQ&s
+9,polite,சரி,sari,Okay / Correct,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh993xRMjI7R0KRbsW-O6TnmOmSKDShIfgbwPr-RYM8OsIXfYhBB0wd_abiTg&s
+10,basics,எப்படி இருக்கிறீர்கள்?,eppadi irukkireergal?,How are you? (formal),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO35bO_ABG7j9VZFCExBhGHQyRDOQNRHxLPA3L4EgusVbxmKpdKY2lnqTlS34&s
+11,basics,நான் நன்றாக இருக்கிறேன்,naan nandraga irukkiren,I am fine,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRue10-Dt5u2rQ_uBEcxkJlrdGQyNDrvPANwKk3qXhvABtHYBJLLJHH2e8SxA&s
+12,time,இன்று,indru,Today,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9adQ6cQcK1mtmpVhlJ-G2zRDtQmBMjRQOp9Mc0VutecxeKMVt4tK1nC3jmlw&s
+13,time,நாளை,naalai,Tomorrow,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShawL7M8LE1YvoMALwJJtIulCHWbQpnTs-APfrFOndvS9FK5pCv1Plv3kuog&s
+14,time,நேற்று,netru,Yesterday,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZSIF-as27iDgZYOaYMcTSKV-Bda6D9Q5-0WGd7gZLnN8c7VfZsa0LxOS50Q&s
+15,questions,எங்கே?,enge?,Where?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI5esMYZND7LDKgU6HADUHuzCfETXSoI5ymXw002OPgOHDg48jQjg1kFAYGA&s
+16,questions,என்ன?,enna?,What?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo032HS5-BCD12m2iaciH2iAOV8xprtZFaE7U6m-r6jrTgUAdHGyeX0C9lwXA&s
+17,travel,கழிப்பறை எங்கே?,kazhipparai enge?,Where is the bathroom?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwd4Tk3keQAUtAUL3jmF14vUVlCrw0OdDKTGUSONJVWA10kJv57ylBAdJNA&s
+18,travel,எவ்வளவு?,evvalavu?,How much?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoL2nId4cxdemYLndaHNfepJijoEAZsMk9irNFn37N_hjpYRJ9EZXEb2lqeg&s
+19,travel,எனக்கு புரியவில்லை,enakku puriyavillai,I don’t understand,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Tpgln_rRFDP9VU6xFbfWvL1ENVz-vohsms6hqnDqcxH10G7Thu9Z4hejYQ&s
+20,travel,ஆங்கிலம் பேசுவீங்களா?,aangilam pesuvingalaa?,Do you speak English?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQklbrhrcRAgbL1CQrMi9uiOUDFuhrqrXd8fWuUhcxSCBniLFdXoXSqL4UHRw&s

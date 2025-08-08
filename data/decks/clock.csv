@@ -1,19 +1,19 @@
-id,category,tamil,translit,english
-1,clock,மணி என்ன?,Mani enna?,What time is it?
-2,clock,ஒன்று/இரண்டு கடந்த காலாண்டு,Onru/irantu katanta kalantu,Quarter past one / two.
-3,clock,ஒன்றைர/இரண்டு,Onrarai/irantu,Half past one / two.
-4,clock,இருபது கடந்த ஒன்று / இரண்டு,Irupatu katanta onru/ irantu,Twenty past one / two.
-5,clock,இருபது முதல் ஒன்று / இரண்டு,Irupatu mutal onru/ irantu,Twenty to one / two.
-6,clock,மதியம் 1:30 / அதிகாைல 2:15 மணி,Matiyam 1:30/ Atikalai 2:15 Mani,It's 1:30 pm / 2:15 am.
-7,clock,எந்த ேநரத்தில்?,Enta nerattil?,At what time?
-8,clock,ேததியில்?,Tetiyil?,At date?
-9,clock,மணிக்கு,Manikku,At ...
-10,clock,வினாடி(கள்),Vinati(kal),Second(s)
-11,clock,நிமிடம்(கள்),Nimitam(kal),Minute(s)
-12,clock,மணிேநரம்(கள்),Manineram(kal),Hours(s)
-13,clock,நாள்,Nal,Day
-14,clock,வாரம்,Varam,Week
-15,clock,மாதம்,Matam,Month
-16,clock,ஆண்டு,Antu,Year
-17,clock,தசாப்தம்,Tacaptam,Decade
-18,clock,நூற்றாண்டு,Nurrantu,Century
+id,category,tamil,translit,english,image
+1,clock,மணி என்ன?,Mani enna?,What time is it?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqbcOYBKFoCGFJZiTK3qSaeBwZidMU3Xbr7Q1BSYShNY7c_0cLc2EZ0rpC0po&s
+2,clock,ஒன்று/இரண்டு கடந்த காலாண்டு,Onru/irantu katanta kalantu,Quarter past one / two.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt6eLqQ5tdgYJMytsBOmgDW_vIVMjeRL8sQD4wHyU15AWEu7LMv_-QOoZplw&s
+3,clock,ஒன்றைர/இரண்டு,Onrarai/irantu,Half past one / two.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-5kdBvSVHltAlWUtMPh547IXLDWy-_MCH8DjOZKb0YfMAGZd2PPjft1G8mw&s
+4,clock,இருபது கடந்த ஒன்று / இரண்டு,Irupatu katanta onru/ irantu,Twenty past one / two.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLbp70RydB00xdMrnRKk0_Len2ut4ccXtTWWELOCQ5y1iBT84lsklx5SjCg&s
+5,clock,இருபது முதல் ஒன்று / இரண்டு,Irupatu mutal onru/ irantu,Twenty to one / two.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsfflbxKb9XKiRxvDi0Gt6kE7UJrA2L3lqr-k6mvRXHK05hx3WrfxXRci6Sg&s
+6,clock,மதியம் 1:30 / அதிகாைல 2:15 மணி,Matiyam 1:30/ Atikalai 2:15 Mani,It's 1:30 pm / 2:15 am.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQemzyEplyqSF112bqsycl1jhx0UFc_o3sPXV6-tk840vevKRGkByVi5d3q8w&s
+7,clock,எந்த ேநரத்தில்?,Enta nerattil?,At what time?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTztkYB7OztOvKuwDB6pbgu2fEOiPNt1TPEFTiZ7dboLmBw4QeuVIOF1mIhwA&s
+8,clock,ேததியில்?,Tetiyil?,At date?,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbfH24y310_xuWkYsNTfM3Qx13rgLffG3b29rJN6htVd8OoBUgmF8tSVv7KA&s
+9,clock,மணிக்கு,Manikku,At ...,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0PnyGUow-vzh5k-Oj8byBKltaZpejkEwg9OUiSpbJeF6vm58SOp-E5ZPUw&s
+10,clock,வினாடி(கள்),Vinati(kal),Second(s),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFL2BCBPVDBgToMaVy6m0Ob0dAZCKX84Mxj1PkcsbIX0SRE2MUGIpgUcQbvE8&s
+11,clock,நிமிடம்(கள்),Nimitam(kal),Minute(s),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqcMOGKajsayqDNtsM1OOUtMRFU-GYNEr3TAVp46eVRhdSvMfAFenyGXfNww&s
+12,clock,மணிேநரம்(கள்),Manineram(kal),Hours(s),https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUfkieWuQQKJfBtUsF1X94TRbjultk2qtKh8vMFhaLTKo-7TrgJ2I9zHjUg&s
+13,clock,நாள்,Nal,Day,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnoPknlQPodJ0YD8Jd1PD7vgJQZO7QyToSYcsfXgdreNQQdAF_34eZICK-w&s
+14,clock,வாரம்,Varam,Week,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YkzwSNlZrmyWPjIBZSELVQIkOUmTSagmmjJEHEz-KZTwNzi7ckymg63RPA&s
+15,clock,மாதம்,Matam,Month,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuM8Ko-Q6FICxAUKk5yDrf48YmBBLB1L87dyRxsLdYXGDznHyHtCrVYA3XcA&s
+16,clock,ஆண்டு,Antu,Year,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKaKiutKDgo48sA5GLPzD0L5gj16Qxeh6-pdFSlBi0PHZKLCPqMsmw-jtig&s
+17,clock,தசாப்தம்,Tacaptam,Decade,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbn-9V_i7uC2FmBxXndjPLKJ1mJtnD4rmft2zNrOdN_J5-YNaQDTZDVND9yA&s
+18,clock,நூற்றாண்டு,Nurrantu,Century,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyd4I_tARPdMv4R-fPctLb0Ds4zNv_e5kKXlAA6mhNzC0ItutydOBiEfrFjIY&s
