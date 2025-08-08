@@ -89,8 +89,8 @@ if deck_name != st.session_state[SessionState.DECK_NAME]:
 
 page = st.sidebar.radio(
     "Go to",
-    ["Home", "Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Progress", "About"],
-    index=["Home", "Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Progress", "About"].index(st.session_state[SessionState.PAGE])
+    ["Home", "Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"],
+    index=["Home", "Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"].index(st.session_state[SessionState.PAGE])
 )
 if page != st.session_state[SessionState.PAGE]:
     st.session_state[SessionState.PAGE] = page
@@ -110,11 +110,30 @@ if page == "Home":
     *   **Type (Translit):** Practice typing Tamil words using transliteration.
     *   **Type (Tamil KB):** Practice typing Tamil words using an on-screen Tamil keyboard.
     *   **Alphabet:** Explore the Tamil alphabet with transliterations and audio.
+    *   **Browse Cards:** View all flashcards by category.
     *   **Progress:** Track your learning progress and manage your data.
     *   **About:** Learn more about Tamil Buddy.
 
     To get started, select a deck from the sidebar.
     """)
+elif page == "Browse Cards":
+    st.header("Browse All Flashcards")
+    all_decks = helpers.list_decks()
+    total_cards_count = 0
+
+    for deck_name_item in all_decks:
+        deck_df = helpers.load_deck(deck_name_item)
+        total_cards_count += len(deck_df)
+        st.subheader(f"Deck: {deck_name_item.replace('_', ' ').title()}")
+        
+        # Group by category and display
+        for category, group in deck_df.groupby("category"):
+            st.markdown(f"#### Category: {category.title()}")
+            for index, row in group.iterrows():
+                st.markdown(f"**{row['tamil']}** ({row['translit']}) - {row['english']}")
+            st.markdown("--- ")
+    st.markdown(f"### Total Flashcards: {total_cards_count}")
+
 if page == "Learn (Flashcards)":
     deck = helpers.load_deck(deck_name)
     progress = helpers.load_progress(learner, deck_name)
