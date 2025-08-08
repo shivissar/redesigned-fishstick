@@ -138,14 +138,23 @@ if page == "Learn (Flashcards)":
     deck = helpers.load_deck(deck_name)
     progress = helpers.load_progress(learner, deck_name)
     st.header(f"Learn — Flashcards ({deck_name})")
-    colA, colB, colC = st.columns(3)
+    colA, colB = st.columns([3, 1])
     with colA:
         categories = ["All"] + sorted(deck["category"].unique().tolist())
-        cat = st.selectbox("Category", categories, index=0)
+        cat = st.selectbox("What to study?", categories, index=0)
     with colB:
-        order = st.selectbox("Order", ["Due first", "Random", "Ascending id"], index=0)
-    with colC:
-        audio_on = st.checkbox("Play Tamil audio", value=True)
+        audio_on = st.checkbox("Play audio", value=True)
+
+    st.write("How to study?")
+    c1, c2, c3 = st.columns(3)
+    if c1.button("Smart Sort (Due First)"):
+        order = "Due first"
+    elif c2.button("Random"):
+        order = "Random"
+    elif c3.button("A-Z"):
+        order = "Ascending id"
+    else:
+        order = "Due first"
 
     pool = deck.copy() if cat == "All" else deck[deck["category"] == cat].copy()
     due = helpers.due_cards(pool, progress)

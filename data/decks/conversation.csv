@@ -1,0 +1,37 @@
+id,category,tamil,translit,english
+1,conversation,மன்னிக்கவும். / மன்னிக்கவும்,Mannikkavum. / Mannikkavum,Excuse me. / Sorry.
+2,conversation,கவைலப்படாேத,Kavalaippatate,Don`t worry.
+3,conversation,காைல வணக்கம்,Kalai vanakkam,Good morning.
+4,conversation,மதிய வணக்கம்,Matiya vanakkam,Good afternoon.
+5,conversation,மாைல வணக்கம்,Malai vanakkam,Good evening.
+6,conversation,இனிய இரவு,Iniya iravu,Good night.
+7,conversation,பிரியாவிைட,Piriyavitai,Goodbye.
+8,conversation,வருகிேறன்,Varukiren,Bye.
+9,conversation,எப்படி இருக்கிறீர்கள்?,Eppati irukkirirkal?,How are you?
+10,conversation,நான் நலமாக இருக்கிேறன். மற்றும் நீங்கள்?,Nan nalamaka irukkiren. Marrum ninkal?,I am fine. And you?
+11,conversation,உங்கள் ெபயர் என்ன?,Unkal peyar enna?,What is your name?
+12,conversation,உங்கைள சந்திப்பதில் மகிழ்ச்சி அைடகிேறன்,Unkalai cantippatil makilcci ataikiren,I am pleased to meet you.
+13,conversation,ஆசீர்வதிக்கிேறன்! (தும்மும்ேபாது),Acirvatikkiren! [tum'mumpotu],Bless you! (when sneezing)
+14,conversation,வாழ்த்து,vaazhthu,Cheers!
+15,conversation,நல்ல அதிர்ஷ்டம்!,Nalla atirstam!,Good Luck!
+16,conversation,பிறந்தநாள் வாழ்த்துக்கள்!,Pirantanal valttukkal!,Happy Birthday!
+17,conversation,வாழ்த்துக்கள்!,Valttukkal!,Congratulation!
+18,conversation,நீங்கள் இங்கு வசிக்கிறீர்களா?,Ninkal inku vacikkirirkala?,Do you live here?
+19,conversation,எங்ேக ேபாகிறாய்?,Enke pokiray?,Where are you going?
+20,conversation,நீ என்ன ெசய்து ெகாண்டிருக்கிறாய்?,Ni enna ceytu kontirukkiray?,What are you doing?
+21,conversation,நீங்கள் எங்கிருந்து வருகிறீர்கள்?,Ninkal enkiruntu varukirirkal?,Where are you from?
+22,conversation,நான் இருந்து…,Nan iruntu…,I am from … .
+23,conversation,நீங்கள் இங்ேக விரும்புகிறீர்களா?,Ninkal inke virumpukirirkala?,Do you like it here?
+24,conversation,"ஆம், நான் இங்ேக விரும்புகிேறன்","Am, nan inke virumpukiren","Yes, I like it here."
+25,conversation,நீங்கள் எவ்வளவு காலமாக இங்கு இருக்கிறீர்கள்?,Ninkal evvalavu kalamaka inku irukkirirkal?,How long are you here for?
+26,conversation,உங்கள் வயது என்ன?,Unkal vayatu enna?,How old are you?
+27,conversation,எனக்கு … வயது,Enakku… vayatu,I am … years old.
+28,conversation,உங்களுைடய ெதாழில் என்ன?,Unkalutaiya tolil enna?,What is your occupation?
+29,conversation,நான் ஒரு …,Nan oru…,I am a …
+30,conversation,நான் ேவைல ெசய்கிேறன்…,nan velai ceykiren…,I work in …
+31,conversation,நான் ஒரு மாணவன்,nan oru manavan,I am a student.
+32,conversation,நான் ஓய்வு ெபற்றவன்,nan oyvu perravan,I am retired.
+33,conversation,"உங்களுைடயது என்ன…? (மின்னஞ்சல், ெதாைலேபசி எண், முகவரி)","Unkalutaiyatu enna…? (Minnancal, tolaipeci en, mukavari)","What is your … ? (email, phone number, address)"
+34,conversation,"இேதா என் … . (மின்னஞ்சல், ெதாைலேபசி எண், முகவரி)","ito en… . (Minnancal, tolaipeci en, mukavari)","Here is my …. (email, phone number, address)"
+35,conversation,நீங்கள் Facebook அல்லது Twitter இல் இருக்கிறீர்களா?,ninkal Facebook allatu Twitter il irukkirirkala?,Are you on Facebook or Twitter?
+36,conversation,ெதாடர்பில் இருங்கள்!,Totarpil irunkal!,Keep in touch!

@@ -1,0 +1,8 @@
+id,category,tamil,translit,english
+1,train,ரயில் எத்தைன மணிக்கு புறப்படும்?,Rayil ettanai manikku purappatum?,What time does the train depart?
+2,train,ரயில் எந்த பிளாட்பாரத்தில் இருந்து புறப்படுகிறது?,Rayil enta pilatparattil iruntu purappatukiratu?,Which platform does the train leave from?
+3,train,[இலக்கு] ெசல்ல ேநரடி ரயில் உள்ளதா?,[Ilakku] cella nerati rayil ullata?,Is there a direct train to [destination]?
+4,train,அடுத்த ரயில் எப்ேபாது வரும்?,Atutta rayil eppotu varum?,When does the next train arrive?
+5,train,எனக்கு [வகுப்பு] டிக்ெகட் ேவண்டும்,Enakku [vakuppu] tikket ventum,I would like a ticket for [class]
+6,train,இந்த இருக்ைக ஒதுக்கப்பட்டுள்ளதா?,inta irukkai otukkappattullata?,Is this seat reserved?
+7,train,[இலக்கு] எவ்வளவு தூரம் பயணம்?,[Ilakku] evvalavu turam payanam?,How long is the journey to [destination]?

@@ -1,0 +1,20 @@
+id,category,tamil,translit,english
+1,time_relations,காைல,Kalai,Morning
+2,time_relations,மதியம்,matiyam,Afternoon
+3,time_relations,சாயங்காலம்,cayankalam,Evening
+4,time_relations,இரவு,iravu,Night
+5,time_relations,இன்று,inru,Today
+6,time_relations,நாைள காைல,nalai kalai,Tomorrow Morning
+7,time_relations,நாைள மறுநாள்,nalai marunal,Day After Tomorrow
+8,time_relations,ேநற்று,nerru,Yesterday
+9,time_relations,ேநற்று மாைல,nerru malai,Yesterday Evening
+10,time_relations,ேநற்றுமுன் தினம்,nerrumun tinam,Day Before Yesterday
+11,time_relations,இந்த மாதம் / அடுத்த மாதம் / கடந்த மாதம்,inta matam/ atutta matam/ katanta matam,This Month / Next Month / Last Month
+12,time_relations,இந்த ஆண்டு / அடுத்த ஆண்டு / கடந்த ஆண்டு,inta antu/ atutta antu/ katanta antu,This Year / Next Year / Last Year
+13,time_relations,இப்ேபாது,ippotu,Now
+14,time_relations,பின்னர்,pinnar,Later
+15,time_relations,முன்பு,munpu,Before
+16,time_relations,ேம மாதம் வைர,me matam varai,Until May
+17,time_relations,ஒரு மணி ேநரத்திற்குள்,oru mani nerattirkul,Within an hour
+18,time_relations,(மூன்று) நாட்களில்,(munru) natkalil,In (three) days
+19,time_relations,(பத்து) நிமிடங்களில்,(pattu) nimitankalil,In (ten) minutes

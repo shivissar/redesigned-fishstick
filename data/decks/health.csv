@@ -1,0 +1,18 @@
+id,category,tamil,translit,english
+1,health,அருகில் உள்ள மருத்துவமைன/மருத்துவர் எங்ேக?,Arukil ulla maruttuvamanai/maruttuvar enke?,Where is the nearest hospital/doctor?
+2,health,எனக்கு ஆங்கிலம்/இந்தி/தமிழ் ேபசும் மருத்துவர் ேதைவ,Enakku ankilam/inti/tamil pecum maruttuvar tevai,I need a doctor who speaks English/Hindi/Tamil.
+3,health,நான் ஒரு ஆண்/ெபண் மருத்துவைரப் பார்க்கலாமா?,Nan oru an/pen maruttuvaraip parkkalama?,Could I see a male/female doctor?
+4,health,அருகிலுள்ள ேவதியியலாளர் எங்ேக?,Arukilulla vetiyiyalalar enke?,Where is a nearest chemist?
+5,health,எனக்கு காய்ச்சல் இருக்கிறது,Enakku kayccal irukkiratu,I have a fever.
+6,health,எனக்கு உடம்பு சரியில்ைல,Enakku utampu cariyillai,I am sick.
+7,health,அவன்/அவள்/என் நண்பன் உடல்நிைல சரியில்லாமல் இருக்கிறான்,Avan/aval/en nanpan utalnilai cariyillamal irukkiran,He/She/My friend is sick.
+8,health,நான் வாந்தி எடுத்திருக்கிேறன்,Nan vanti etuttirukkiren,I have been vomiting.
+9,health,எனக்கு உயர ேநாய் உள்ளது,Enakku uyara noy ullatu,I have altitude sickness.
+10,health,எனக்கு …,Enakku …,I am allergic to …
+11,health,என்னால் எனது …,Ennal enatu …,I can't move my …
+12,health,என் (ைக/கால்) வீங்கியிருக்கிறது,En (kai/kal) vinkiyirukkiratu,My (hand/leg) is swollen.
+13,health,எனக்கு பல் வலி உள்ளது,Enakku pal vali ullatu,I have a toothache.
+14,health,என் பற்கள் உைடந்தன,En parkal utaintana,My dentures are broken.
+15,health,என் ஈறு வலிக்கிறது,En iru valikkiratu,My gum hurts.
+16,health,எனக்கு …க்கான மருந்துச் சீட்டு ேவண்டும்,Enakku … kkana maruntuc cittu ventum,I need a prescription for …
+17,health,நான் …,nan …,I am on medication for …

@@ -1,0 +1,19 @@
+id,category,tamil,translit,english
+1,clock,மணி என்ன?,Mani enna?,What time is it?
+2,clock,ஒன்று/இரண்டு கடந்த காலாண்டு,Onru/irantu katanta kalantu,Quarter past one / two.
+3,clock,ஒன்றைர/இரண்டு,Onrarai/irantu,Half past one / two.
+4,clock,இருபது கடந்த ஒன்று / இரண்டு,Irupatu katanta onru/ irantu,Twenty past one / two.
+5,clock,இருபது முதல் ஒன்று / இரண்டு,Irupatu mutal onru/ irantu,Twenty to one / two.
+6,clock,மதியம் 1:30 / அதிகாைல 2:15 மணி,Matiyam 1:30/ Atikalai 2:15 Mani,It's 1:30 pm / 2:15 am.
+7,clock,எந்த ேநரத்தில்?,Enta nerattil?,At what time?
+8,clock,ேததியில்?,Tetiyil?,At date?
+9,clock,மணிக்கு,Manikku,At ...
+10,clock,வினாடி(கள்),Vinati(kal),Second(s)
+11,clock,நிமிடம்(கள்),Nimitam(kal),Minute(s)
+12,clock,மணிேநரம்(கள்),Manineram(kal),Hours(s)
+13,clock,நாள்,Nal,Day
+14,clock,வாரம்,Varam,Week
+15,clock,மாதம்,Matam,Month
+16,clock,ஆண்டு,Antu,Year
+17,clock,தசாப்தம்,Tacaptam,Decade
+18,clock,நூற்றாண்டு,Nurrantu,Century
