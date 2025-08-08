@@ -30,7 +30,19 @@ class SessionState:
             st.session_state[SessionState.KEYBOARD_INPUT] = ""
 
 # --- Main App -----------------------------------------------------------------
-st.set_page_config(page_title="Tamil Buddy", page_icon="📝", layout="centered")
+st.set_page_config(
+    page_title="Tamil Buddy",
+    page_icon="📝",
+    layout="centered",
+    initial_sidebar_state="expanded",
+    theme="light",
+    # Custom theme settings for a modern look
+    # primaryColor="#6D28D9",  # A vibrant purple
+    # backgroundColor="#F9FAFB", # Light gray background
+    # secondaryBackgroundColor="#E5E7EB", # Slightly darker gray for secondary elements
+    # textColor="#1F2937", # Dark text
+    # font="sans serif"
+)
 
 helpers.init_directories()
 SessionState.init()
@@ -63,8 +75,8 @@ if deck_name != st.session_state[SessionState.DECK_NAME]:
 
 page = st.sidebar.radio(
     "Go to",
-    ["Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Progress", "About"],
-    index=["Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Progress", "About"].index(st.session_state[SessionState.PAGE])
+    ["Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Progress", "About"],
+    index=["Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Progress", "About"].index(st.session_state[SessionState.PAGE])
 )
 if page != st.session_state[SessionState.PAGE]:
     st.session_state[SessionState.PAGE] = page
@@ -105,7 +117,7 @@ if page == "Learn (Flashcards)":
 
         st.markdown(f"### {row['tamil']}")
         if audio_on:
-            with st.spinner("Generating audio..."):
+            with st.spinner("Generating Tamil audio for this card..."):
                 mp3 = helpers.tts_file(deck_name, int(row["id"]), row["tamil"])
             if mp3.exists():
                 st.audio(str(mp3))
@@ -235,6 +247,9 @@ elif page == "Progress":
                 st.error("Invalid format. The imported file should be a JSON dictionary.")
         except Exception as e:
             st.error(f"Failed to import: {e}")
+
+elif page == "Alphabet":
+    ui.render_alphabet_page(helpers)
 
 elif page == "About":
     st.header("About")
