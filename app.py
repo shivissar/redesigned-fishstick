@@ -14,6 +14,9 @@ class SessionState:
     PAGE = "page"
     CARD_INDEX = "card_index"
     KEYBOARD_INPUT = "keyboard_input"
+    SCORE = "score"
+    LEVEL = "level"
+    STREAK = "streak"
 
     @staticmethod
     def init():
@@ -28,6 +31,12 @@ class SessionState:
             st.session_state[SessionState.CARD_INDEX] = 0
         if SessionState.KEYBOARD_INPUT not in st.session_state:
             st.session_state[SessionState.KEYBOARD_INPUT] = ""
+        if SessionState.SCORE not in st.session_state:
+            st.session_state[SessionState.SCORE] = 0
+        if SessionState.LEVEL not in st.session_state:
+            st.session_state[SessionState.LEVEL] = 1
+        if SessionState.STREAK not in st.session_state:
+            st.session_state[SessionState.STREAK] = 0
 
 # --- Main App -----------------------------------------------------------------
 st.set_page_config(
@@ -37,11 +46,23 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+st.markdown("""
+<style>
+    div[data-testid="stRadio"] label p {
+        font-size: 20px; /* Adjust as needed */
+    }
+</style>
+""", unsafe_allow_html=True)
+
 helpers.init_directories()
 SessionState.init()
 
 # --- Sidebar -----------------------------------------------------------------
 st.sidebar.title("Tamil Buddy")
+
+st.sidebar.markdown(f"**Score:** {st.session_state[SessionState.SCORE]}")
+st.sidebar.markdown(f"**Level:** {st.session_state[SessionState.LEVEL]}")
+st.sidebar.markdown(f"**Streak:** {st.session_state[SessionState.STREAK]}")
 
 learner = st.sidebar.text_input(
     "Learner name",
@@ -129,7 +150,7 @@ if page == "Learn (Flashcards)":
         with st.container(border=True):
             st.write(f"**Card {int(row['id'])}** · Box **{state['box']}** · Due **{state['due']}**")
 
-            st.markdown(f"### {row['tamil']}")
+            st.markdown(f"<h3 style='font-size: 40px;'>{row['tamil']}</h3>", unsafe_allow_html=True)
             if audio_on:
                 with st.spinner("Generating Tamil audio for this card..."):
                     mp3 = helpers.tts_file(deck_name, int(row["id"]), row["tamil"])
@@ -139,29 +160,45 @@ if page == "Learn (Flashcards)":
                     st.caption("Install gTTS for audio: `pip install gTTS` (requires internet).")
 
             if st.toggle("Show transliteration"):
-                st.write(row["translit"])
+                st.markdown(f"<p style='font-size: 20px;'>{row['translit']}</p>", unsafe_allow_html=True)
             if st.toggle("Show English"):
-                st.write(row["english"])
+                st.markdown(f"<p style='font-size: 20px;'>{row['english']}</p>", unsafe_allow_html=True)
 
             st.markdown("--- ") # Separator for buttons
 
             c1, c2, c3, c4 = st.columns(4)
             if c1.button("I knew it ✅"):
-                helpers.update_card_progress(progress, int(row["id"]), correct=True)
+                st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
+                    progress, int(row["id"]), correct=True, 
+                    current_score=st.session_state[SessionState.SCORE], 
+                    current_streak=st.session_state[SessionState.STREAK]
+                )
+                st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
                 helpers.save_progress(learner, deck_name, progress)
                 st.session_state[SessionState.CARD_INDEX] += 1
                 st.rerun()
             if c2.button("So‑so 🤔"):
                 # Treat as neither correct nor incorrect, just show next card
                 st.session_state[SessionState.CARD_INDEX] += 1
+                st.session_state[SessionState.STREAK] = 0 # Break streak
                 st.rerun()
             if c3.button("Hard 😩"):
-                helpers.update_card_progress(progress, int(row["id"]), correct=False, hard_mode=True)
+                st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
+                    progress, int(row["id"]), correct=False, hard_mode=True, 
+                    current_score=st.session_state[SessionState.SCORE], 
+                    current_streak=st.session_state[SessionState.STREAK]
+                )
+                st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
                 helpers.save_progress(learner, deck_name, progress)
                 st.session_state[SessionState.CARD_INDEX] += 1
                 st.rerun()
             if c4.button("I missed it ❌"):
-                helpers.update_card_progress(progress, int(row["id"]), correct=False)
+                st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
+                    progress, int(row["id"]), correct=False, 
+                    current_score=st.session_state[SessionState.SCORE], 
+                    current_streak=st.session_state[SessionState.STREAK]
+                )
+                st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
                 helpers.save_progress(learner, deck_name, progress)
                 st.session_state[SessionState.CARD_INDEX] += 1
                 st.rerun()
@@ -185,7 +222,7 @@ elif page == "Quiz":
         with st.container(border=True):
             qrow = pool.sample(1, random_state=random.randint(0, 9999)).iloc[0]
             # Question display: Always show both Tamil and English
-            st.subheader(f"{qrow['tamil']} ({qrow['english']})")
+            st.markdown(f"<h3 style='font-size: 30px;'>{qrow['tamil']} ({qrow['english']})</h3>", unsafe_allow_html=True)
 
             # Generate options with both Tamil and English
             # Correct answer
@@ -209,11 +246,16 @@ elif page == "Quiz":
             choice = st.radio("Pick one:", options, index=None)
             if st.button("Check"):
                 is_correct = (choice == correct_option_text) # Compare against the formatted correct option
+                st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
+                    progress, int(qrow["id"]), is_correct, 
+                    current_score=st.session_state[SessionState.SCORE], 
+                    current_streak=st.session_state[SessionState.STREAK]
+                )
+                st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
                 if is_correct:
                     st.success("Correct!")
                 else:
                     st.error(f"Not quite. Correct answer: {correct_option_text}")
-                helpers.update_card_progress(progress, int(qrow["id"]), is_correct)
                 helpers.save_progress(learner, deck_name, progress)
 
 elif page == "Type (Translit)":
@@ -228,6 +270,12 @@ elif page == "Type (Translit)":
         normalized_ans = helpers.normalize(ans)
         normalized_translit = helpers.normalize(row["translit"])
         is_correct = normalized_ans == normalized_translit
+        st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
+            progress, int(row["id"]), is_correct, 
+            current_score=st.session_state[SessionState.SCORE], 
+            current_streak=st.session_state[SessionState.STREAK]
+        )
+        st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
         if is_correct:
             st.success("Correct!")
         else:
@@ -235,7 +283,6 @@ elif page == "Type (Translit)":
             st.markdown(f"Expected: `{row['translit']}`")
             st.markdown(f"Your Answer: `{ans}`")
             st.markdown(f"Difference: {helpers.highlight_diff(normalized_translit, normalized_ans)}", unsafe_allow_html=True)
-        helpers.update_card_progress(progress, int(row["id"]), is_correct)
         helpers.save_progress(learner, deck_name, progress)
 
 elif page == "Type (Tamil KB)":
@@ -253,6 +300,12 @@ elif page == "Type (Tamil KB)":
         user_input = st.session_state.get(SessionState.KEYBOARD_INPUT, "").strip()
         target = str(row["tamil"]).strip()
         is_correct = (user_input == target)
+        st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
+            progress, int(row["id"]), is_correct, 
+            current_score=st.session_state[SessionState.SCORE], 
+            current_streak=st.session_state[SessionState.STREAK]
+        )
+        st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
         if is_correct:
             st.success("Correct!")
         else:
@@ -260,7 +313,6 @@ elif page == "Type (Tamil KB)":
             st.markdown(f"Expected: `{target}`")
             st.markdown(f"Your Answer: `{user_input}`")
             st.markdown(f"Difference: {helpers.highlight_diff(target, user_input)}", unsafe_allow_html=True)
-        helpers.update_card_progress(progress, int(row["id"]), is_correct)
         helpers.save_progress(learner, deck_name, progress)
 
 elif page == "Progress":

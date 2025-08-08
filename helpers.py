@@ -72,17 +72,45 @@ def set_card_state(progress: dict, card_id: int, box: int, due: datetime.date):
     """Updates the state of a card in the progress data."""
     progress[str(card_id)] = {"box": int(box), "due": str(due)}
 
-def update_card_progress(progress: dict, card_id: int, correct: bool, hard_mode: bool = False):
+def update_card_progress(progress: dict, card_id: int, correct: bool, hard_mode: bool = False, current_score: int = 0, current_streak: int = 0):
     """Updates the card's box and due date based on whether the answer was correct."""
+    def update_card_progress(progress: dict, card_id: int, correct: bool, hard_mode: bool = False, current_score: int = 0, current_streak: int = 0):
+    """Updates the card's box and due date based on whether the answer was correct.
+    Also updates score and streak for gamification.
+    """
     state = get_card_state(progress, card_id)
+    score_change = 0
+    new_streak = 0
+
     if correct:
         new_box = min(state["box"] + 1, 5)
         set_card_state(progress, card_id, new_box, schedule_from_box(new_box))
+        score_change = 10 + (current_streak * 2) # Base points + streak bonus
+        new_streak = current_streak + 1
     elif hard_mode:
         new_box = max(1, state["box"] - 1) # Move back one box, but not below 1
         set_card_state(progress, card_id, new_box, schedule_from_box(new_box))
+        score_change = -5 # Small penalty for hard mode
+        new_streak = 0
     else:
         set_card_state(progress, card_id, 1, schedule_from_box(1))
+        score_change = -10 # Larger penalty for incorrect
+        new_streak = 0
+
+    return max(0, current_score + score_change), new_streak
+
+def calculate_level(score: int) -> int:
+    """Calculates the user's level based on their score."""
+    if score < 100:
+        return 1
+    elif score < 300:
+        return 2
+    elif score < 600:
+        return 3
+    elif score < 1000:
+        return 4
+    else:
+        return 5 # Or more complex leveling system
 
 def due_cards(deck: pd.DataFrame, progress: dict) -> pd.DataFrame:
     """
