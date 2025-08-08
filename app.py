@@ -23,7 +23,7 @@ class SessionState:
         if SessionState.DECK_NAME not in st.session_state:
             st.session_state[SessionState.DECK_NAME] = None
         if SessionState.PAGE not in st.session_state:
-            st.session_state[SessionState.PAGE] = "Learn (Flashcards)"
+            st.session_state[SessionState.PAGE] = "Home"
         if SessionState.CARD_INDEX not in st.session_state:
             st.session_state[SessionState.CARD_INDEX] = 0
         if SessionState.KEYBOARD_INPUT not in st.session_state:
@@ -75,19 +75,35 @@ if deck_name != st.session_state[SessionState.DECK_NAME]:
 
 page = st.sidebar.radio(
     "Go to",
-    ["Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Progress", "About"],
-    index=["Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Progress", "About"].index(st.session_state[SessionState.PAGE])
+    ["Home", "Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Progress", "About"],
+    index=["Home", "Learn (Flashcards)", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Progress", "About"].index(st.session_state[SessionState.PAGE])
 )
 if page != st.session_state[SessionState.PAGE]:
     st.session_state[SessionState.PAGE] = page
     st.session_state[SessionState.CARD_INDEX] = 0
 
 
-deck = helpers.load_deck(deck_name)
-progress = helpers.load_progress(learner, deck_name)
+
 
 # --- Pages -------------------------------------------------------------------
+if page == "Home":
+    st.header("Welcome to Tamil Buddy!")
+    st.markdown("""
+    Your personal companion for learning Tamil. Choose a learning mode from the sidebar:
+
+    *   **Learn (Flashcards):** Practice vocabulary and phrases with spaced repetition.
+    *   **Quiz:** Test your knowledge with multiple-choice questions.
+    *   **Type (Translit):** Practice typing Tamil words using transliteration.
+    *   **Type (Tamil KB):** Practice typing Tamil words using an on-screen Tamil keyboard.
+    *   **Alphabet:** Explore the Tamil alphabet with transliterations and audio.
+    *   **Progress:** Track your learning progress and manage your data.
+    *   **About:** Learn more about Tamil Buddy.
+
+    To get started, select a deck from the sidebar.
+    """)
 if page == "Learn (Flashcards)":
+    deck = helpers.load_deck(deck_name)
+    progress = helpers.load_progress(learner, deck_name)
     st.header(f"Learn — Flashcards ({deck_name})")
     colA, colB, colC = st.columns(3)
     with colA:
@@ -153,6 +169,8 @@ if page == "Learn (Flashcards)":
                 st.rerun()
 
 elif page == "Quiz":
+    deck = helpers.load_deck(deck_name)
+    progress = helpers.load_progress(learner, deck_name)
     st.header(f"Quiz — Multiple Choice ({deck_name})")
     colA, colB = st.columns(2)
     with colA:
@@ -196,6 +214,8 @@ elif page == "Quiz":
                 helpers.save_progress(learner, deck_name, progress)
 
 elif page == "Type (Translit)":
+    deck = helpers.load_deck(deck_name)
+    progress = helpers.load_progress(learner, deck_name)
     st.header(f"Type — Transliteration ({deck_name})")
     st.write("Type the **transliteration** (Latin letters) for the Tamil text shown.")
     row = deck.sample(1, random_state=random.randint(0, 9999)).iloc[0]
@@ -216,6 +236,8 @@ elif page == "Type (Translit)":
         helpers.save_progress(learner, deck_name, progress)
 
 elif page == "Type (Tamil KB)":
+    deck = helpers.load_deck(deck_name)
+    progress = helpers.load_progress(learner, deck_name)
     st.header(f"Type — Tamil Keyboard ({deck_name})")
     st.write("Use the on‑screen keyboard to type the **Tamil** for the English prompt.")
     row = deck.sample(1, random_state=random.randint(0, 9999)).iloc[0]
@@ -239,6 +261,8 @@ elif page == "Type (Tamil KB)":
         helpers.save_progress(learner, deck_name, progress)
 
 elif page == "Progress":
+    deck = helpers.load_deck(deck_name)
+    progress = helpers.load_progress(learner, deck_name)
     st.header(f"Progress ({deck_name})")
     boxes = {i: 0 for i in range(1, 6)}
     for cid in deck["id"].tolist():
