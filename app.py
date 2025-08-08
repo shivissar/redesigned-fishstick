@@ -34,14 +34,7 @@ st.set_page_config(
     page_title="Tamil Buddy",
     page_icon="📝",
     layout="centered",
-    initial_sidebar_state="expanded",
-    theme="light",
-    # Custom theme settings for a modern look
-    # primaryColor="#6D28D9",  # A vibrant purple
-    # backgroundColor="#F9FAFB", # Light gray background
-    # secondaryBackgroundColor="#E5E7EB", # Slightly darker gray for secondary elements
-    # textColor="#1F2937", # Dark text
-    # font="sans serif"
+    initial_sidebar_state="expanded"
 )
 
 helpers.init_directories()
