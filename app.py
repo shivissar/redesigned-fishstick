@@ -110,40 +110,47 @@ if page == "Learn (Flashcards)":
     if show_df.empty:
         st.info("No cards available.")
     else:
-        idx = st.session_state[SessionState.CARD_INDEX]
-        row = show_df.iloc[idx % len(show_df)]
+        total_cards = len(show_df)
+        idx = st.session_state[SessionState.CARD_INDEX] % total_cards
+        row = show_df.iloc[idx]
         state = helpers.get_card_state(progress, int(row["id"]))
-        st.write(f"**Card {int(row['id'])}** · Box **{state['box']}** · Due **{state['due']}**")
 
-        st.markdown(f"### {row['tamil']}")
-        if audio_on:
-            with st.spinner("Generating Tamil audio for this card..."):
-                mp3 = helpers.tts_file(deck_name, int(row["id"]), row["tamil"])
-            if mp3.exists():
-                st.audio(str(mp3))
-            elif not helpers.GTTS_AVAILABLE:
-                st.caption("Install gTTS for audio: `pip install gTTS` (requires internet).")
+        st.progress((idx + 1) / total_cards, text=f"Card {idx + 1} of {total_cards}")
 
-        if st.toggle("Show transliteration"):
-            st.write(row["translit"])
-        if st.toggle("Show English"):
-            st.write(row["english"])
+        with st.container(border=True):
+            st.write(f"**Card {int(row['id'])}** · Box **{state['box']}** · Due **{state['due']}**")
 
-        c1, c2, c3 = st.columns(3)
-        if c1.button("I knew it ✅"):
-            helpers.update_card_progress(progress, int(row["id"]), correct=True)
-            helpers.save_progress(learner, deck_name, progress)
-            st.session_state[SessionState.CARD_INDEX] += 1
-            st.rerun()
-        if c2.button("So‑so 🤔"):
-            # Treat as neither correct nor incorrect, just show next card
-            st.session_state[SessionState.CARD_INDEX] += 1
-            st.rerun()
-        if c3.button("I missed it ❌"):
-            helpers.update_card_progress(progress, int(row["id"]), correct=False)
-            helpers.save_progress(learner, deck_name, progress)
-            st.session_state[SessionState.CARD_INDEX] += 1
-            st.rerun()
+            st.markdown(f"### {row['tamil']}")
+            if audio_on:
+                with st.spinner("Generating Tamil audio for this card..."):
+                    mp3 = helpers.tts_file(deck_name, int(row["id"]), row["tamil"])
+                if mp3.exists():
+                    st.audio(str(mp3))
+                elif not helpers.GTTS_AVAILABLE:
+                    st.caption("Install gTTS for audio: `pip install gTTS` (requires internet).")
+
+            if st.toggle("Show transliteration"):
+                st.write(row["translit"])
+            if st.toggle("Show English"):
+                st.write(row["english"])
+
+            st.markdown("--- ") # Separator for buttons
+
+            c1, c2, c3 = st.columns(3)
+            if c1.button("I knew it ✅"):
+                helpers.update_card_progress(progress, int(row["id"]), correct=True)
+                helpers.save_progress(learner, deck_name, progress)
+                st.session_state[SessionState.CARD_INDEX] += 1
+                st.rerun()
+            if c2.button("So‑so 🤔"):
+                # Treat as neither correct nor incorrect, just show next card
+                st.session_state[SessionState.CARD_INDEX] += 1
+                st.rerun()
+            if c3.button("I missed it ❌"):
+                helpers.update_card_progress(progress, int(row["id"]), correct=False)
+                helpers.save_progress(learner, deck_name, progress)
+                st.session_state[SessionState.CARD_INDEX] += 1
+                st.rerun()
 
 elif page == "Quiz":
     st.header(f"Quiz — Multiple Choice ({deck_name})")
@@ -159,33 +166,34 @@ elif page == "Quiz":
     if pool.empty:
         st.info("No cards in this category.")
     else:
-        qrow = pool.sample(1, random_state=random.randint(0, 9999)).iloc[0]
-        prompt_side = "tamil_to_english" if direction == "Tamil → English" else "english_to_tamil"
-        
-        if prompt_side == "tamil_to_english":
-            correct_answer = qrow["english"]
-            distractors = pool[pool["id"] != qrow["id"]]["english"].sample(min(3, len(pool)-1)).tolist()
-        else:
-            correct_answer = qrow["tamil"]
-            distractors = pool[pool["id"] != qrow["id"]]["tamil"].sample(min(3, len(pool)-1)).tolist()
-
-        options = distractors + [correct_answer]
-        random.shuffle(options)
-
-        if prompt_side == "tamil_to_english":
-            st.subheader(qrow["tamil"])
-        else:
-            st.subheader(qrow["english"])
-
-        choice = st.radio("Pick one:", options, index=None)
-        if st.button("Check"):
-            is_correct = (choice == correct_answer)
-            if is_correct:
-                st.success("Correct!")
+        with st.container(border=True):
+            qrow = pool.sample(1, random_state=random.randint(0, 9999)).iloc[0]
+            prompt_side = "tamil_to_english" if direction == "Tamil → English" else "english_to_tamil"
+            
+            if prompt_side == "tamil_to_english":
+                correct_answer = qrow["english"]
+                distractors = pool[pool["id"] != qrow["id"]]["english"].sample(min(3, len(pool)-1)).tolist()
             else:
-                st.error(f"Not quite. Correct answer: {correct_answer}")
-            helpers.update_card_progress(progress, int(qrow["id"]), is_correct)
-            helpers.save_progress(learner, deck_name, progress)
+                correct_answer = qrow["tamil"]
+                distractors = pool[pool["id"] != qrow["id"]]["tamil"].sample(min(3, len(pool)-1)).tolist()
+
+            options = distractors + [correct_answer]
+            random.shuffle(options)
+
+            if prompt_side == "tamil_to_english":
+                st.subheader(qrow["tamil"])
+            else:
+                st.subheader(qrow["english"])
+
+            choice = st.radio("Pick one:", options, index=None)
+            if st.button("Check"):
+                is_correct = (choice == correct_answer)
+                if is_correct:
+                    st.success("Correct!")
+                else:
+                    st.error(f"Not quite. Correct answer: {correct_answer}")
+                helpers.update_card_progress(progress, int(qrow["id"]), is_correct)
+                helpers.save_progress(learner, deck_name, progress)
 
 elif page == "Type (Translit)":
     st.header(f"Type — Transliteration ({deck_name})")
@@ -194,11 +202,16 @@ elif page == "Type (Translit)":
     st.subheader(row["tamil"])
     ans = st.text_input("Transliteration (e.g., 'vanakkam')", value="")
     if st.button("Check"):
-        is_correct = helpers.normalize(ans) == helpers.normalize(row["translit"])
+        normalized_ans = helpers.normalize(ans)
+        normalized_translit = helpers.normalize(row["translit"])
+        is_correct = normalized_ans == normalized_translit
         if is_correct:
             st.success("Correct!")
         else:
-            st.error(f"Expected: {row['translit']}")
+            st.error("Not quite. Here's the comparison:")
+            st.markdown(f"Expected: `{row['translit']}`")
+            st.markdown(f"Your Answer: `{ans}`")
+            st.markdown(f"Difference: {helpers.highlight_diff(normalized_translit, normalized_ans)}", unsafe_allow_html=True)
         helpers.update_card_progress(progress, int(row["id"]), is_correct)
         helpers.save_progress(learner, deck_name, progress)
 
@@ -218,7 +231,10 @@ elif page == "Type (Tamil KB)":
         if is_correct:
             st.success("Correct!")
         else:
-            st.error(f"Expected: {target}")
+            st.error("Not quite. Here's the comparison:")
+            st.markdown(f"Expected: `{target}`")
+            st.markdown(f"Your Answer: `{user_input}`")
+            st.markdown(f"Difference: {helpers.highlight_diff(target, user_input)}", unsafe_allow_html=True)
         helpers.update_card_progress(progress, int(row["id"]), is_correct)
         helpers.save_progress(learner, deck_name, progress)
 

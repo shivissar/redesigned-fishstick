@@ -120,6 +120,31 @@ def normalize(s: str) -> str:
     """Normalizes a string by stripping whitespace and converting to lowercase."""
     return (s or "").strip().lower()
 
+def highlight_diff(expected: str, actual: str) -> str:
+    """
+    Compares two strings and returns an HTML string with differences highlighted.
+    Correct characters are green, incorrect are red.
+    """
+    html_output = []
+    min_len = min(len(expected), len(actual))
+
+    for i in range(min_len):
+        if expected[i] == actual[i]:
+            html_output.append(f"<span style='color: green;'>{actual[i]}</span>")
+        else:
+            html_output.append(f"<span style='color: red;'>{actual[i]}</span>")
+
+    # Add remaining characters from the longer string
+    if len(actual) > len(expected):
+        for i in range(min_len, len(actual)):
+            html_output.append(f"<span style='color: red;'>{actual[i]}</span>")
+    elif len(expected) > len(actual):
+        # If expected is longer, show missing characters as red placeholders
+        for i in range(min_len, len(expected)):
+            html_output.append(f"<span style='color: red;'>_</span>") # Placeholder for missing char
+
+    return "".join(html_output)
+
 def tts_file(deck_name: str, phrase_id: int, text_tamil: str) -> Path:
     """Generates and caches a text-to-speech audio file for a Tamil phrase."""
     audio_deck_dir = AUDIO_DIR / deck_name
@@ -128,6 +153,29 @@ def tts_file(deck_name: str, phrase_id: int, text_tamil: str) -> Path:
     if GTTS_AVAILABLE and not mp3.exists():
         try:
             gTTS(text=text_tamil, lang="ta").save(str(mp3))
+        except Exception:
+            # Fail silently if TTS fails
+            pass
+    return mp3
+
+def tts_for_alphabet(character: str) -> Path:
+    """Generates and caches a TTS audio file for a single Tamil character."""
+    alphabet_audio_dir = AUDIO_DIR / "_alphabet"
+    alphabet_audio_dir.mkdir(parents=True, exist_ok=True)
+    # Use a sanitized filename for the character
+    safe_char_name = "".join(c for c in character if c.isalnum())
+    mp3 = alphabet_audio_dir / f"{safe_char_name}.mp3"
+    if GTTS_AVAILABLE and not mp3.exists():
+        try:
+            # The pronunciation of a standalone consonant is often with an implicit 'a' sound,
+            # so we add the vowel sign 'அ' to help gTTS pronounce it more naturally.
+            # This is a heuristic and may not be perfect for all characters.
+            text_to_speak = character
+            if len(character) == 1 and '\u0b80' <= character <= '\u0bff': # In Tamil unicode block
+                if character not in "அஆஇஈஉஊஎஏஐஒஓஔஃ": # If it's a consonant
+                    text_to_speak = character + " " + "அ"
+
+            gTTS(text=text_to_speak, lang="ta").save(str(mp3))
         except Exception:
             # Fail silently if TTS fails
             pass
