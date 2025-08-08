@@ -73,8 +73,6 @@ def set_card_state(progress: dict, card_id: int, box: int, due: datetime.date):
     progress[str(card_id)] = {"box": int(box), "due": str(due)}
 
 def update_card_progress(progress: dict, card_id: int, correct: bool, hard_mode: bool = False, current_score: int = 0, current_streak: int = 0):
-    """Updates the card's box and due date based on whether the answer was correct."""
-    def update_card_progress(progress: dict, card_id: int, correct: bool, hard_mode: bool = False, current_score: int = 0, current_streak: int = 0):
     """Updates the card's box and due date based on whether the answer was correct.
     Also updates score and streak for gamification.
     """
