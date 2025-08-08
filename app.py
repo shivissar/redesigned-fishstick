@@ -249,31 +249,23 @@ elif page == "Quiz":
     else:
         with st.container(border=True):
             qrow = pool.sample(1, random_state=random.randint(0, 9999)).iloc[0]
-            # Question display: Always show both Tamil and English
-            st.markdown(f"<h3 style='font-size: 30px;'>{qrow['tamil']} ({qrow['english']})</h3>", unsafe_allow_html=True)
+            if direction == "Tamil → English":
+                question = f"{qrow['tamil']} ({qrow['translit']})"
+                correct_answer = qrow['english']
+                options = [correct_answer] + pool[pool['id'] != qrow['id']].sample(min(3, len(pool)-1))['english'].tolist()
+            else: # English → Tamil
+                question = qrow['english']
+                correct_answer = f"{qrow['tamil']} ({qrow['translit']})"
+                
+                other_choices = pool[pool['id'] != qrow['id']].sample(min(3, len(pool)-1))
+                options = [correct_answer] + [f"{row['tamil']} ({row['translit']})" for _, row in other_choices.iterrows()]
 
-            # Generate options with both Tamil and English
-            # Correct answer
-            correct_option_text = f"{qrow['tamil']} ({qrow['english']})"
-
-            # Distractors
-            distractor_options_texts = []
-            # Get other cards that are not the current question card
-            other_cards = pool[pool["id"] != qrow["id"]]
-
-            # Sample distractors and format them
-            num_distractors = min(3, len(other_cards))
-            if num_distractors > 0:
-                sampled_distractors = other_cards.sample(num_distractors, random_state=random.randint(0, 9999))
-                for _, d_row in sampled_distractors.iterrows():
-                    distractor_options_texts.append(f"{d_row['tamil']} ({d_row['english']})")
-
-            options = distractor_options_texts + [correct_option_text]
+            st.markdown(f"<h3 style='font-size: 30px;'>{question}</h3>", unsafe_allow_html=True)
             random.shuffle(options)
 
             choice = st.radio("Pick one:", options, index=None)
             if st.button("Check"):
-                is_correct = (choice == correct_option_text) # Compare against the formatted correct option
+                is_correct = (choice == correct_answer)
                 st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
                     progress, int(qrow["id"]), is_correct, 
                     current_score=st.session_state[SessionState.SCORE], 
@@ -283,7 +275,7 @@ elif page == "Quiz":
                 if is_correct:
                     st.success("Correct!")
                 else:
-                    st.error(f"Not quite. Correct answer: {correct_option_text}")
+                    st.error(f"Not quite. Correct answer: {correct_answer}")
                 helpers.save_progress(learner, deck_name, progress)
 
 elif page == "Type (Translit)":
@@ -347,18 +339,23 @@ elif page == "Progress":
     deck = helpers.load_deck(deck_name)
     progress = helpers.load_progress(learner, deck_name)
     st.header(f"Progress ({deck_name})")
-    boxes = {i: 0 for i in range(1, 6)}
+
+    boxes = {f"Box {i}": 0 for i in range(1, 6)}
     for cid in deck["id"].tolist():
-        boxes[helpers.get_card_state(progress, int(cid))["box"]] += 1
-    st.write("Cards per box:")
-    st.write(pd.DataFrame([boxes]))
+        box_num = helpers.get_card_state(progress, int(cid))["box"]
+        boxes[f"Box {box_num}"] += 1
+
+    st.subheader("Cards per Box")
+    st.bar_chart(pd.DataFrame(boxes, index=[0]))
+
     due = helpers.due_cards(deck, progress)
-    st.write(f"**Due today:** {len(due)}")
+    st.subheader(f"Due Today: {len(due)}")
 
+    st.subheader("Data Management")
     export_data = helpers.json.dumps(progress, ensure_ascii=False, indent=2)
-    st.download_button("Export progress JSON", data=export_data, file_name=f"tamil_progress_{learner}_{deck_name}.json", mime="application/json")
+    st.download_button("Export Progress JSON", data=export_data, file_name=f"tamil_progress_{learner}_{deck_name}.json", mime="application/json")
 
-    up = st.file_uploader("Import progress JSON", type=["json"])
+    up = st.file_uploader("Import Progress JSON", type=["json"])
     if up:
         try:
             loaded = helpers.json.load(up)
