@@ -89,8 +89,8 @@ if deck_name != st.session_state[SessionState.DECK_NAME]:
 
 page = st.sidebar.radio(
     "Go to",
-    ["Home", "Learn (Flashcards)", "Quiz", "Fill-in-the-Blanks", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"],
-    index=["Home", "Learn (Flashcards)", "Quiz", "Fill-in-the-Blanks", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"].index(st.session_state[SessionState.PAGE])
+    ["Home", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"],
+    index=["Home", "Quiz", "Type (Translit)", "Type (Tamil KB)", "Alphabet", "Browse Cards", "Progress", "About"].index(st.session_state[SessionState.PAGE])
 )
 if page != st.session_state[SessionState.PAGE]:
     st.session_state[SessionState.PAGE] = page
@@ -105,7 +105,6 @@ if page == "Home":
     st.markdown("""
     Your personal companion for learning Tamil. Choose a learning mode from the sidebar:
 
-    *   **Learn (Flashcards):** Practice vocabulary and phrases with spaced repetition.
     *   **Quiz:** Test your knowledge with multiple-choice questions.
     *   **Type (Translit):** Practice typing Tamil words using transliteration.
     *   **Type (Tamil KB):** Practice typing Tamil words using an on-screen Tamil keyboard.
@@ -134,110 +133,25 @@ elif page == "Browse Cards":
             st.markdown("--- ")
     st.markdown(f"### Total Flashcards: {total_cards_count}")
 
-if page == "Learn (Flashcards)":
-    deck = helpers.load_deck(deck_name)
-    progress = helpers.load_progress(learner, deck_name)
-    st.header(f"Learn — Flashcards ({deck_name})")
-    colA, colB = st.columns([3, 1])
-    with colA:
-        categories = ["All"] + sorted(deck["category"].unique().tolist())
-        cat = st.selectbox("What to study?", categories, index=0)
-    with colB:
-        audio_on = st.checkbox("Play audio", value=True)
 
-    st.write("How to study?")
-    c1, c2, c3 = st.columns(3)
-    if c1.button("Smart Sort (Due First)"):
-        order = "Due first"
-    elif c2.button("Random"):
-        order = "Random"
-    elif c3.button("A-Z"):
-        order = "Ascending id"
-    else:
-        order = "Due first"
-
-    pool = deck.copy() if cat == "All" else deck[deck["category"] == cat].copy()
-    due = helpers.due_cards(pool, progress)
-    if order == "Due first":
-        show_df = pd.concat([due, pool[~pool["id"].isin(due["id"])]]) if not due.empty else pool
-    elif order == "Ascending id":
-        show_df = pool.sort_values("id")
-    else:
-        show_df = pool.sample(frac=1, random_state=random.randint(0, 9999))
-
-    if show_df.empty:
-        st.info("No cards available.")
-    else:
-        total_cards = len(show_df)
-        idx = st.session_state[SessionState.CARD_INDEX] % total_cards
-        row = show_df.iloc[idx]
-        state = helpers.get_card_state(progress, int(row["id"]))
-
-        st.progress((idx + 1) / total_cards, text=f"Card {idx + 1} of {total_cards}")
-
-        with st.container(border=True):
-            st.write(f"**Card {int(row['id'])}** · Box **{state['box']}** · Due **{state['due']}**")
-
-            if "image" in row and pd.notna(row["image"]):
-                st.image(row["image"])
-
-            st.markdown(f"<h3 style='font-size: 40px;'>{row['tamil']}</h3>", unsafe_allow_html=True)
-            if audio_on:
-                with st.spinner("Generating Tamil audio for this card..."):
-                    mp3 = helpers.tts_file(deck_name, int(row["id"]), row["tamil"])
-                if mp3.exists():
-                    st.audio(str(mp3))
-                elif not helpers.GTTS_AVAILABLE:
-                    st.caption("Install gTTS for audio: `pip install gTTS` (requires internet).")
-
-            if st.toggle("Show transliteration"):
-                st.markdown(f"<p style='font-size: 20px;'>{row['translit']}</p>", unsafe_allow_html=True)
-            if st.toggle("Show English"):
-                st.markdown(f"<p style='font-size: 20px;'>{row['english']}</p>", unsafe_allow_html=True)
-
-            st.markdown("--- ") # Separator for buttons
-
-            c1, c2, c3, c4 = st.columns(4)
-            if c1.button("I knew it ✅"):
-                st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
-                    progress, int(row["id"]), correct=True, 
-                    current_score=st.session_state[SessionState.SCORE], 
-                    current_streak=st.session_state[SessionState.STREAK]
-                )
-                st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
-                helpers.save_progress(learner, deck_name, progress)
-                st.session_state[SessionState.CARD_INDEX] += 1
-                st.rerun()
-            if c2.button("So‑so 🤔"):
-                # Treat as neither correct nor incorrect, just show next card
-                st.session_state[SessionState.CARD_INDEX] += 1
-                st.session_state[SessionState.STREAK] = 0 # Break streak
-                st.rerun()
-            if c3.button("Hard 😩"):
-                st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
-                    progress, int(row["id"]), correct=False, hard_mode=True, 
-                    current_score=st.session_state[SessionState.SCORE], 
-                    current_streak=st.session_state[SessionState.STREAK]
-                )
-                st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
-                helpers.save_progress(learner, deck_name, progress)
-                st.session_state[SessionState.CARD_INDEX] += 1
-                st.rerun()
-            if c4.button("I missed it ❌"):
-                st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
-                    progress, int(row["id"]), correct=False, 
-                    current_score=st.session_state[SessionState.SCORE], 
-                    current_streak=st.session_state[SessionState.STREAK]
-                )
-                st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
-                helpers.save_progress(learner, deck_name, progress)
-                st.session_state[SessionState.CARD_INDEX] += 1
-                st.rerun()
 
 elif page == "Quiz":
     deck = helpers.load_deck(deck_name)
     progress = helpers.load_progress(learner, deck_name)
     st.header(f"Quiz — Multiple Choice ({deck_name})")
+
+    # Initialize quiz state
+    if 'quiz_question' not in st.session_state:
+        st.session_state.quiz_question = None
+    if 'quiz_options' not in st.session_state:
+        st.session_state.quiz_options = []
+    if 'quiz_correct_answer' not in st.session_state:
+        st.session_state.quiz_correct_answer = None
+    if 'quiz_user_answer' not in st.session_state:
+        st.session_state.quiz_user_answer = None
+    if 'quiz_answer_submitted' not in st.session_state:
+        st.session_state.quiz_answer_submitted = False
+
     colA, colB = st.columns(2)
     with colA:
         direction = st.selectbox("Direction", ["Tamil → English", "English → Tamil"], index=0)
@@ -250,114 +164,66 @@ elif page == "Quiz":
     if pool.empty:
         st.info("No cards in this category.")
     else:
-        with st.container(border=True):
+        # Load a new question if one isn't already loaded
+        if st.session_state.quiz_question is None:
             qrow = pool.sample(1, random_state=random.randint(0, 9999)).iloc[0]
             if direction == "Tamil → English":
-                question = f"{qrow['tamil']} ({qrow['translit']})"
-                correct_answer = qrow['english']
-                options = [correct_answer] + pool[pool['id'] != qrow['id']].sample(min(3, len(pool)-1))['english'].tolist()
-            else: # English → Tamil
-                question = qrow['english']
-                correct_answer = f"{qrow['tamil']} ({qrow['translit']})"
-                
+                st.session_state.quiz_question = f"{qrow['tamil']} ({qrow['translit']})"
+                st.session_state.quiz_correct_answer = qrow['english']
+                options = [st.session_state.quiz_correct_answer] + pool[pool['id'] != qrow['id']].sample(min(3, len(pool)-1))['english'].tolist()
+            else:  # English → Tamil
+                st.session_state.quiz_question = qrow['english']
+                st.session_state.quiz_correct_answer = f"{qrow['tamil']} ({qrow['translit']})"
                 other_choices = pool[pool['id'] != qrow['id']].sample(min(3, len(pool)-1))
-                options = [correct_answer] + [f"{row['tamil']} ({row['translit']})" for _, row in other_choices.iterrows()]
-
-            st.markdown(f"<h3 style='font-size: 30px;'>{question}</h3>", unsafe_allow_html=True)
-            with st.spinner("Generating Tamil audio..."):
-                mp3 = helpers.tts_file(deck_name, int(qrow["id"]), qrow["tamil"])
-            if mp3.exists():
-                st.audio(str(mp3))
-            elif not helpers.GTTS_AVAILABLE:
-                st.caption("Install gTTS for audio: `pip install gTTS` (requires internet).")
+                options = [st.session_state.quiz_correct_answer] + [f"{row['tamil']} ({row['translit']})" for _, row in other_choices.iterrows()]
+            
             random.shuffle(options)
+            st.session_state.quiz_options = options
+            st.session_state.qrow = qrow
 
-            choice = st.radio("Pick one:", options, index=None, key="quiz_choice")
-            
-            col_check, col_next = st.columns(2)
+        st.markdown(f"<h3 style='font-size: 30px;'>{st.session_state.quiz_question}</h3>", unsafe_allow_html=True)
+        
+        qrow = st.session_state.qrow
+        with st.spinner("Generating Tamil audio..."):
+            mp3 = helpers.tts_file(deck_name, int(qrow["id"]), qrow["tamil"])
+        if mp3.exists():
+            st.audio(str(mp3))
+        elif not helpers.GTTS_AVAILABLE:
+            st.caption("Install gTTS for audio: `pip install gTTS` (requires internet).")
 
-            if col_check.button("Check", disabled=st.session_state.get("quiz_checked", False)):
-                st.session_state["quiz_checked"] = True
-                is_correct = (choice == correct_answer)
-                st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
-                    progress, int(qrow["id"]), is_correct, 
-                    current_score=st.session_state[SessionState.SCORE], 
-                    current_streak=st.session_state[SessionState.STREAK]
-                )
-                st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
-                if is_correct:
-                    st.success("Correct!")
-                else:
-                    st.error(f"Not quite. Correct answer: {correct_answer}")
-                helpers.save_progress(learner, deck_name, progress)
-                st.session_state["current_qrow"] = qrow # Store qrow for next button
-                st.session_state["correct_answer"] = correct_answer # Store correct_answer for next button
-                # st.rerun() # Removed rerun here
+        user_answer = st.radio("Pick one:", st.session_state.quiz_options, index=None, key=f"quiz_radio_{st.session_state[SessionState.CARD_INDEX]}")
 
-            if st.session_state.get("quiz_checked", False):
-                if col_next.button("Next Question"):
-                    st.session_state["quiz_checked"] = False
-                    st.session_state[SessionState.CARD_INDEX] += 1 # Advance card index for next question
-                    st.rerun()
-
-elif page == "Fill-in-the-Blanks":
-    deck = helpers.load_deck(deck_name)
-    progress = helpers.load_progress(learner, deck_name)
-    st.header(f"Fill-in-the-Blanks ({deck_name})")
-
-    colA, colB = st.columns(2)
-    with colA:
-        categories = ["All"] + sorted(deck["category"].unique().tolist())
-        cat = st.selectbox("Category", categories, index=0)
-    with colB:
-        st.empty() # Placeholder for future options
-
-    pool = deck.copy() if cat == "All" else deck[deck["category"] == cat].copy()
-
-    if pool.empty:
-        st.info("No cards in this category.")
-    else:
-        with st.container(border=True):
-            qrow = pool.sample(1, random_state=random.randint(0, 9999)).iloc[0]
-            english_sentence = qrow["english"]
-            words = english_sentence.split()
-            
-            if len(words) > 1:
-                # Randomly select a word to mask
-                masked_word_index = random.randint(0, len(words) - 1)
-                masked_word = words[masked_word_index]
-                
-                # Create the question sentence with a blank
-                question_words = words[:masked_word_index] + ["_____"] + words[masked_word_index+1:]
-                question_sentence = " ".join(question_words)
-                
-                st.markdown(f"<h3 style='font-size: 30px;'>{question_sentence}</h3>", unsafe_allow_html=True)
-                user_answer = st.text_input("Your answer:", key="fill_in_blank_answer")
-
-                col_check, col_next = st.columns(2)
-
-                if col_check.button("Check", disabled=st.session_state.get("fill_in_blank_checked", False)):
-                    st.session_state["fill_in_blank_checked"] = True
-                    is_correct = (helpers.normalize(user_answer) == helpers.normalize(masked_word))
-                    st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
-                        progress, int(qrow["id"]), is_correct, 
-                        current_score=st.session_state[SessionState.SCORE], 
-                        current_streak=st.session_state[SessionState.STREAK]
-                    )
-                    st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
-                    if is_correct:
-                        st.success("Correct!")
-                    else:
-                        st.error(f"Not quite. Correct answer: {masked_word}")
-                    helpers.save_progress(learner, deck_name, progress)
-
-                if st.session_state.get("fill_in_blank_checked", False):
-                    if col_next.button("Next Question"):
-                        st.session_state["fill_in_blank_checked"] = False
-                        st.session_state[SessionState.CARD_INDEX] += 1 # Advance card index for next question
-                        st.rerun()
+        if not st.session_state.quiz_answer_submitted:
+            if st.button("Submit", key=f"submit_quiz_{st.session_state[SessionState.CARD_INDEX]}"):
+                st.session_state.quiz_user_answer = user_answer
+                st.session_state.quiz_answer_submitted = True
+                st.rerun()
+        else:
+            is_correct = (st.session_state.quiz_user_answer == st.session_state.quiz_correct_answer)
+            if is_correct:
+                st.success("Correct!")
             else:
-                st.info("This card does not have enough words for a fill-in-the-blanks question.")
+                st.error(f"Not quite. Correct answer: {st.session_state.quiz_correct_answer}")
+
+            st.session_state[SessionState.SCORE], st.session_state[SessionState.STREAK] = helpers.update_card_progress(
+                progress, int(qrow["id"]), is_correct,
+                current_score=st.session_state[SessionState.SCORE],
+                current_streak=st.session_state[SessionState.STREAK]
+            )
+            st.session_state[SessionState.LEVEL] = helpers.calculate_level(st.session_state[SessionState.SCORE])
+            helpers.save_progress(learner, deck_name, progress)
+
+            if st.button("Next Question", key=f"next_quiz_{st.session_state[SessionState.CARD_INDEX]}"):
+                # Reset quiz state for the next question
+                st.session_state.quiz_question = None
+                st.session_state.quiz_options = []
+                st.session_state.quiz_correct_answer = None
+                st.session_state.quiz_user_answer = None
+                st.session_state.quiz_answer_submitted = False
+                st.session_state[SessionState.CARD_INDEX] += 1
+                st.rerun()
+
+elif page == "Type (Translit)":
     deck = helpers.load_deck(deck_name)
     progress = helpers.load_progress(learner, deck_name)
     st.header(f"Type — Transliteration ({deck_name})")
@@ -365,7 +231,7 @@ elif page == "Fill-in-the-Blanks":
     row = deck.sample(1, random_state=random.randint(0, 9999)).iloc[0]
     st.subheader(row["tamil"])
     ans = st.text_input("Transliteration (e.g., 'vanakkam')", value="")
-    if st.button("Check"):
+    if st.button("Check", key="check_translit"):
         normalized_ans = helpers.normalize(ans)
         normalized_translit = helpers.normalize(row["translit"])
         is_correct = normalized_ans == normalized_translit
@@ -395,7 +261,7 @@ elif page == "Type (Tamil KB)":
     st.text_input("Your Tamil answer", key=SessionState.KEYBOARD_INPUT)
     ui.render_keyboard(SessionState.KEYBOARD_INPUT)
 
-    if st.button("Check"):
+    if st.button("Check", key="check_tamil_kb"):
         user_input = st.session_state.get(SessionState.KEYBOARD_INPUT, "").strip()
         target = str(row["tamil"]).strip()
         is_correct = (user_input == target)
